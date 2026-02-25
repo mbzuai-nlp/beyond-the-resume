@@ -18,8 +18,18 @@ Setup the virtual environment using:
 uv sync
 ```
 
+Next, add a `.env` file to the project root with the following secret:
+
+```
+OPENAI_API_KEY=...
+```
+
 Finally, run the below command to spin up the system on `localhost:8000`:
 
 ```
 uv run python -m chainlit run app/app_methods.py
 ```
+
+## Reproducing our results (WIP)
+
+This repository uses [DVC](https://dvc.org/) to define data pipelines. These pipelines can be run to reproduce our results...
