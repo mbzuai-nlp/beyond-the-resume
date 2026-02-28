@@ -5,6 +5,16 @@ from typing import AsyncGenerator, Tuple
 from engine.model import parse_resume, upload_resume_file, get_interviewer_message
 from src.judge import PreviousAwareJudge, Judgement
 import logging
+from dotenv import load_dotenv
+import os
+from openai import AsyncOpenAI
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+if not OPENAI_API_KEY:
+    raise ValueError("Could not find OpenAI API key.")
 
 RUBRIC = \
 {
@@ -45,15 +55,18 @@ async def construct_next_message(
 	resume_file_path: str,
 	max_turns: int = 12
 ) -> AsyncGenerator[Tuple[str, Judgement], None]:
+	logging.info("Creating client.")
+
+	client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 	
 	logging.info("Uploading resume.")
-	resume_file_id = await upload_resume_file(resume_file_path)
+	resume_file_id = await upload_resume_file(client=client, resume_file_path=resume_file_path)
 
 	num_turns = 0
 	interview = []
 
 	logging.info("Parsing resume")
-	resume_content = await parse_resume(resume_file_id=resume_file_id)
+	resume_content = await parse_resume(client=client, resume_file_id=resume_file_id)
 
 	with PreviousAwareJudge(exp=None, use_cache=False) as judge:
 		while num_turns < max_turns:
@@ -68,6 +81,7 @@ async def construct_next_message(
 
 			logging.info(f"Getting interviewer message for turn {num_turns}")
 			interviewer_message = await get_interviewer_message(
+				client=client,
 				resume=resume_content,
 				interview=interview,
 				rubric=RUBRIC,

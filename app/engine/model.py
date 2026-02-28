@@ -1,24 +1,13 @@
-from src.judge import Judgement
-from dotenv import load_dotenv
 import os
 from openai import AsyncOpenAI
 from typing import Tuple, Mapping
 
-load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
-if not OPENAI_API_KEY:
-    raise ValueError("Could not find OpenAI API key.")
-
-CLIENT = AsyncOpenAI(api_key=OPENAI_API_KEY)
-
 MODEL_NAME = "gpt-5-2025-08-07"
 
 
-async def upload_resume_file(resume_file_path: str) -> str:
+async def upload_resume_file(client: AsyncOpenAI, resume_file_path: str) -> str:
     with open(resume_file_path, "rb") as f:
-        file_obj = await CLIENT.files.create(
+        file_obj = await client.files.create(
             file=f,
             purpose="assistants"
         )
@@ -26,6 +15,7 @@ async def upload_resume_file(resume_file_path: str) -> str:
 
 
 async def get_interviewer_message(
+    client: AsyncOpenAI, 
     resume: str,
     interview: Tuple[Mapping[str, str], ...],
     rubric: Mapping[str, str],
@@ -94,7 +84,7 @@ Budget: {num_turns} interviewer turns
         *chat,
     ]
 
-    response = await CLIENT.responses.create(
+    response = await client.responses.create(
         model=MODEL_NAME,
         input=payload,
         reasoning={"effort": "low"},
@@ -103,11 +93,11 @@ Budget: {num_turns} interviewer turns
     return response.output_text
 
 
-async def parse_resume(resume_file_id: str) -> str:
+async def parse_resume(client: AsyncOpenAI, resume_file_id: str) -> str:
     """
     Extracts and returns the resume as plain text from an uploaded file_id.
     """
-    response = await CLIENT.responses.create(
+    response = await client.responses.create(
         model=MODEL_NAME,
         reasoning={"effort": "minimal"},
         input=[
