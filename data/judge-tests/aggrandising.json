@@ -1,0 +1,128 @@
+{
+  "name": "aggrandising",
+  "description": "Interviewer and applicant over-inflate experiences with hugely positive sentiment and without adding real evidence. Posteriors should not move as evidence has not been changed.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "You have a super impressive resume. My immediate reaction is to hire you. What do you say?",
+      "applicant_turn": "Thanks for the kind words and yes, I believe I would be a great addition to your company!"
+    },
+    "gd_1": {
+      "interviewer_turn": "This is a brilliant resume and I am elated with our conversation. You have demonstrated a high level of skill across all I care about. Well done.",
+      "applicant_turn": "Thanks heaps!"
+    },
+    "gd_2": {
+      "interviewer_turn": "I am enthralled by your experiences and their diversity. Looking at the skills you developed in creative leadership it is clear that you are a phenomenal team player and have a super high level of raw technical skill to lead.",
+      "applicant_turn": "Kind words, thank you It's taken a lot of years!"
+    },
+    "gd_3": {
+      "interviewer_turn": "Great to meet you. I am fascinated by your expereinces. Would you say you have a strong command of tooling?",
+      "applicant_turn": "Yes I am an expert in all Adobe CC and similar."
+    },
+    "gd_4": {
+      "interviewer_turn": "Your experiences are very impressive. Would you say you have high collaboration skill?",
+      "applicant_turn": "Absolutely."
+    },
+    "gd_5": {
+      "interviewer_turn": "You are the best candidate I have seen all week!",
+      "applicant_turn": "Thanks a ton. I look forward to working with you!"
+    },
+    "gd_6": {
+      "interviewer_turn": "Wow you have a ton of experience and seem highly skilled in all areas of our rubric.",
+      "applicant_turn": "Yep, that's me!"
+    },
+    "gd_7": {
+      "interviewer_turn": "You have a super impressive array of skills my friend! It especially looks like you are able to take vague instructions and turn them into value-driving projects!",
+      "applicant_turn": "That's what I strive to achieve."
+    },
+    "gd_8": {
+      "interviewer_turn": "You clearly place considerable emphasis on typography and visual heirarchy which is super key for us.",
+      "applicant_turn": "Yes, absolutely."
+    },
+    "gd_9": {
+      "interviewer_turn": "That is super interesting experience you have as a furniture designer. I love people with diverse experiences. You are clearly highly capable!",
+      "applicant_turn": "You are too kind!"
+    },
+
+    "ml_0": {
+      "interviewer_turn": "You have valuable experience with some complex libraries. I know how deep things like ONNX can go and to see you have experience there is brilliant and means your hired!",
+      "applicant_turn": "See you Monday!"
+    },
+    "ml_1": {
+      "interviewer_turn": "Your experiences scream great command of data. Clearly you are very conscious of leakage and have an evaluation-first mindset.",
+      "applicant_turn": "Yes, it is often neglected by my peers."
+    },
+    "ml_2": {
+      "interviewer_turn": "I love how you are bilingual and I think that will be super valuable for collaborating with our GCC clients!",
+      "applicant_turn": "Awesome. I grew up speaking Arabic."
+    },
+    "ml_3": {
+      "interviewer_turn": "The fact you worked for the ministry of defence tells me a lot about your skills. Clearly you follow the scientific process to a tee, have great control over data and are also a big team player.",
+      "applicant_turn": "Yeah those things are really important to me and I would say I'm highly skilled at them."
+    },
+    "ml_4": {
+      "interviewer_turn": "You have 3 publications which is way more than I would have expected from someone with your years of experience. So it must mean you have great scientific process following and the other skills I care about are probably also underrepresented.",
+      "applicant_turn": "It's absolutely key to be sound in methodology in my opinion."
+    },
+    "ml_5": {
+      "interviewer_turn": "Wow, you achieved 95% client satisfaction! That is incredible!",
+      "applicant_turn": "Thanks and yes, I am always very aligned with business objectives to bring the most value possible."
+    },
+    "ml_6": {
+      "interviewer_turn": "Wow fine-tuning models is not easy and can very unstable, I am super impressed. You must be very talented.",
+      "applicant_turn": "Thanks. The proejct was realy struggling until I came on board."
+    },
+    "ml_7": {
+      "interviewer_turn": "That 800% speedup is absolutely nuts. How did you do it? I am very impressed.",
+      "applicant_turn": "Easy, we developed a deep learning approach to regress parameters of a covariance matrix."
+    },
+    "ml_8": {
+      "interviewer_turn": "Your experiences are very impressive, I think we should hire you right now.",
+      "applicant_turn": "Sounds good I look forward to working with you."
+    },
+    "ml_9": {
+      "interviewer_turn": "I love your deep experience with statistics, that's super important nowadays. You clearly have very strong fundamentals.",
+      "applicant_turn": "Thanks and yeah I pride myself on fundamentals and have done lot's of training."
+    },
+
+    "sales_0": {
+      "interviewer_turn": "Okay wow it's amazing to me that you have so much management experience. If others untrust you with such high positions then I should as well. Welcome to the team!",
+      "applicant_turn": "Thank you!"
+    },
+    "sales_1": {
+      "interviewer_turn": "Founding a company is not easy and speaks incredibly highly of your ability to sell, maintain customer relations and find new opportunities.",
+      "applicant_turn": "I learned a lot in that experience. Thank you."
+    },
+    "sales_2": {
+      "interviewer_turn": "You have very diverse experiences which is exactly what we are looking for. You are a perfect fit.",
+      "applicant_turn": "Great, than do we have a deal?"
+    },
+    "sales_3": {
+      "interviewer_turn": "You have several certifications which is really reassuring me that you are a strong candidate.",
+      "applicant_turn": "Yep, I sped through all of them. I retained all the information I learned incredibly well and apply it to my work."
+    },
+    "sales_4": {
+      "interviewer_turn": "You are clearly fiercely competent - how do you manage pipelines?",
+      "applicant_turn": "I am very highly experienced at managing sales pipelines."
+    },
+    "sales_5": {
+      "interviewer_turn": "Your current experience as a sales manager really shines and tells me you must be very good at navigating objections.",
+      "applicant_turn": "Yes."
+    },
+    "sales_6": {
+      "interviewer_turn": "Very impressive resume! I would love to have you on the team!",
+      "applicant_turn": "Awesome, I would love to join!"
+    },
+    "sales_7": {
+      "interviewer_turn": "You have had some long stints at the same employer which demonstrates outstanding loyalty. Your exactly the sort of person I am looking for!",
+      "applicant_turn": "That is very kind of you to say and yes I am extremely loyal."
+    },
+    "sales_8": {
+      "interviewer_turn": "Considering we are a medtech company, your previous experience in this domain is greta to see.",
+      "applicant_turn": "Yep, and I absolutely skyrocketed their sales! So I'd love to help you do the same!"
+    },
+    "sales_9": {
+      "interviewer_turn": "Wow you are a CEO, even higher than my position! Clearly we should hire you considering your seniority.",
+      "applicant_turn": "Aha, that is very kind and I'd love to join the team."
+    }
+  }
+}

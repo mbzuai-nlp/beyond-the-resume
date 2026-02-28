@@ -1,0 +1,276 @@
+{
+  "name": "low-evidence",
+  "description": "Adding low evidence to a specific dimension should move probability mass towards the low level.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "When you create design assets, how do you store them and hand them over to the deployment team?",
+      "applicant_turn": "I'll usually put everything in a shared Drive/Dropbox folder and send the team a link with the exports they need. The source files are there too, but I don't spend a ton of time turning them into a reusable system—my folders tend to be organized per project, and I'll name things in a way that makes sense to me at the time (like v2, final, final-final).",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_1": {
+      "interviewer_turn": "When you were working as a freelancer, what did your process look like from initial client call to delivery?",
+      "applicant_turn": "On the first call I'd ask what they want made and what styles they like, and they'd usually share some references (sometimes AI examples) plus their logo and any copy. Then I'd start designing pretty quickly, send a first version over, and iterate based on their feedback until we landed on something they were happy with, then I'd package up the final files.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_2": {
+      "interviewer_turn": "What is a common piece of feedback you receive?",
+      "applicant_turn": "A pretty common note is that things feel a bit busy and the logo or headline doesn't jump out right away. My usual fix is to make the key elements bigger and add more contrast—sometimes I'll also bold a few other items so nothing important gets missed. I kind of tweak it until it looks like it stands out enough.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_3": {
+      "interviewer_turn": "If a client asked for a design that could be printed, used for social media and their website, how would you construct the three designs recognising the differences in requirements?",
+      "applicant_turn": "Usually just create one file with the assets and provide it to the client and make myself available if they have issues especially with printing.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_4": {
+      "interviewer_turn": "How do you ensure consistency with the brand of your client? What resources do you ask from them?",
+      "applicant_turn": "I don't typically ask for formal brand guidelines unless the client already has them ready to share. I'll look at their website and recent posts and then choose colors, type, and imagery that feel in the same ballpark. If something looks better a slightly different way, I'll go with that, and I don't usually document rules beyond what's in the final files.",
+      "belief_update": {
+        "dimension": "brand_alignment",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_5": {
+      "interviewer_turn": "What is your favourite way of structuring layers?",
+      "applicant_turn": "I try to keep layers readable at the start—like grouping text, imagery, and background—but as the design evolves it can get messy. If the file starts feeling heavy, I'll merge or flatten parts that I don't think I'll need to edit much, just to keep things moving.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_6": {
+      "interviewer_turn": "How do you respond to customer feedack?",
+      "applicant_turn": "I'll ask them what they want changed and then I'll apply those edits and send an updated version back. If the feedback is a bit vague, I'll try a couple adjustments at once and see which direction they like more. I keep versions so we can roll back if needed, but the main goal is just to get to “approved.”",
+      "belief_update": {
+        "dimension": "iteration_process",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_7": {
+      "interviewer_turn": "Give me an example of how you ran a project when you were a marketing manager",
+      "applicant_turn": "We had a launch coming up and the team asked for a hero image plus two Instagram posts. I confirmed the sizes and the deadline, pulled together the product screenshot and copy, and designed the assets over a few days. Once they signed off, I exported everything and handed it to the person scheduling the campaign.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_8": {
+      "interviewer_turn": "How do you ensure layouts have a clear focal point and reading order?",
+      "applicant_turn": "I usually start by arranging everything so it feels balanced, then I'll make the important parts larger or bolder so they're noticeable. I don't follow a strict grid or reading-path rule—I'll often try to give a few key elements strong emphasis so the viewer doesn't miss them, and then I keep nudging spacing and sizes until it feels clear enough.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "gd_9": {
+      "interviewer_turn": "How do you choose what text styles to use in a graphic?",
+      "applicant_turn": "I usually ask the client what font they like (or pick something similar to what I see on their site) and start from there. After that I mostly adjust sizes and weights by eye for each layout, and if a piece needs to stand out I'll just create a new style for it. Unless the client specifically asks for consistent text styles across assets I prefer to keep them separate.",
+      "belief_update": {
+        "dimension": "typography",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_0": {
+      "interviewer_turn": "Run me through the project where you built a RAG system and how you scoped the problem.",
+      "applicant_turn": "The request was basically “build a RAG system over our internal docs,” so I started from an implementation plan using LangChain and a GPT API since that's what I'd used before. I treated success as: you can ask questions and it returns an answer with relevant sources. We focused on getting an end-to-end version working first and then iterated on chunking and retrieval once people started trying it.",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_1": {
+      "interviewer_turn": "interesting research on the forest fire detection. When you offloaded the images from the drone, how did you processes the data before training?",
+      "applicant_turn": "After pulling the images off the drone I filtered out obviously bad frames like very blurry ones, then split the dataset into chunks so multiple people could label in parallel. We didn't do anything too fancy—just gave each person a bucket to label. For the test set I picked one of the buckets so we had a clean holdout and then trained on the rest.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_2": {
+      "interviewer_turn": "Walk me through one of your internship ML projects. What metrics did you look at?",
+      "applicant_turn": "It was a CNN for cancer detection and we mainly tracked accuracy on the held-out set because that was the clearest single number to report. I did look at the loss curve during training and checked a few misclassified examples, but for reporting and deciding whether it was good, accuracy was the headline metric we used.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_3": {
+      "interviewer_turn": "When you fine-tuned YOLO, how did you select on the best set of hyperparameters?",
+      "applicant_turn": "I started from a reasonable default config and then tweaked the settings that seemed to matter—learning rate, batch size, augmentation strength, image size. If the results looked worse I'd change them again based on what I thought was going on. I'd often adjust a couple of things at once to save time, and once the metrics looked better than before I'd stick with that setup.",
+      "belief_update": {
+        "dimension": "failure_analysis_and_iteration",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_4": {
+      "interviewer_turn": "How did you deploy your sentiment detection model?",
+      "applicant_turn": "I ran the model locally once a day using a csv download of data from Postgres.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_5": {
+      "interviewer_turn": "Say you just left a meeting with a stakeholder, what is the next message you are sending them?",
+      "applicant_turn": "I'd probably message something like: “Thanks—can you send me the next dataset or examples you want me to test on?” so I can run it through the model and come back with updated results. If they have any other data sources I should try, I'd ask for those too.",
+      "belief_update": {
+        "dimension": "communication",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_6": {
+      "interviewer_turn": "When you fine-tuned Llama what were the metrics you looked at?",
+      "applicant_turn": "I used a held-out set of prompts and checked how often the model produced the correct answer, basically an accuracy-style score. If that number improved compared to the base model, I considered the fine-tune successful and focused on pushing it higher with a few training tweaks.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_7": {
+      "interviewer_turn": "Walk me through how you interpolated missing data in the validation/test set.",
+      "applicant_turn": "One issue we hit was categorical fields not lining up between splits, so I took the union of categories across train and validation/test and then one-hot encoded so the columns matched. For missing values we mostly just treated them as an “unknown” category for those fields so the model could still consume the rows without errors.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_8": {
+      "interviewer_turn": "Have you ever done research on a time-series prediction task? If so, how did you evaluate performance?",
+      "applicant_turn": "Yes—on a forecasting task we did a random train/test split across the available days so the model saw a good mix of conditions. Then I evaluated with MSE on the test set as the main metric. If the MSE went down versus our earlier version, we treated that as improvement.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "ml_9": {
+      "interviewer_turn": "Your forex predictor, did you ever make changes to the real-time system?",
+      "applicant_turn": "We tried not to touch the real-time setup much because even small changes could throw off performance and require re-tuning. So once it was running, we mostly kept it stable and avoided modifying the pipeline unless something was clearly broken.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_0": {
+      "interviewer_turn": "How do you like to choose potential accounts?",
+      "applicant_turn": "I usually focus on the biggest names or the ones that look most recognizable on the list. If there isn't much to go on, I'll just work through them in order and keep anyone in rotation who shows even mild interest rather than ruling them out too early.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_1": {
+      "interviewer_turn": "Do you have any examples of how you won a tennis client when in a normal social setting?",
+      "applicant_turn": "Yeah, a couple times it came up naturally in conversation and I mentioned what I do. We swapped details and I followed up once afterwards, but I try not to be too pushy in a social setting, so if they don't respond I generally leave it there.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_2": {
+      "interviewer_turn": "When a home owner approached you and asked what property management options were available, how did you present these to them?",
+      "applicant_turn": "I hand them a pamphlet with our service outlines and suggest we set up a follow-up call if they want to go deeper.",
+      "belief_update": {
+        "dimension": "discovery",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_3": {
+      "interviewer_turn": "In your current role, give me an example of how you would run a presentation to try and acquire a new customer.",
+      "applicant_turn": "I have a core deck that tells our story and I'll swap a couple slides depending on the industry. I usually focus on what the product does, a few examples of customers, and the main benefits, then I send the deck afterwards and check back in a few days to see where they're at.",
+      "belief_update": {
+        "dimension": "positioning",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_4": {
+      "interviewer_turn": "When selling, who do you talk to inside the client's company?",
+      "applicant_turn": "I try to get to the main decision-maker early so we're not stuck going in circles. I'm happy to speak with other people involved, but I generally keep communication centered on the sponsor and bring others in as needed if questions come up.",
+      "belief_update": {
+        "dimension": "navigation",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_5": {
+      "interviewer_turn": "When talking with a prospect, objection is always a possibility. How do you handle objections?",
+      "applicant_turn": "I usually try to reassure them and explain the product a bit more. If they still hesitate, I can send some information and follow up later.",
+      "belief_update": {
+        "dimension": "objections",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_6": {
+      "interviewer_turn": "Do you have an example of when a surprise interrupted the close of a deal?",
+      "applicant_turn": "Sometimes near the end someone new from finance or procurement gets involved and the conversation shifts. When that happens I'll adjust the proposal to match what they're asking for and try to schedule another call quickly so the deal doesn't lose momentum.",
+      "belief_update": {
+        "dimension": "deal_control",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_7": {
+      "interviewer_turn": "How often do you update your sales pipeline?",
+      "applicant_turn": "Day to day I mostly keep track in my own notes and then I'll clean it up before deal reviews so the stages and dates are current.",
+      "belief_update": {
+        "dimension": "forecasting",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_8": {
+      "interviewer_turn": "As a customer success manager, what was the most impactful thing you could do day-to-day to find new accounts?",
+      "applicant_turn": "I mostly worked whatever came in and tried to reach out to as many companies as possible to see who might be interested.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "low",
+        "direction": "up"
+      }
+    },
+    "sales_9": {
+      "interviewer_turn": "As CEO, outreach is super important. How do you manage this?",
+      "applicant_turn": "I don't deliberately outreach to customers myself. If I do, it's because I'm interested in a distraction.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "low",
+        "direction": "up"
+      }
+    }
+  }
+}

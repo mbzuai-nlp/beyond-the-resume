@@ -1,0 +1,18 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Alright, Rahul, walk me through your background quickly, why design and marketing together, what you actually did day to day at Hartwell University, and how you measured whether any of it worked."
+    },
+    {
+        "role": "applicant",
+        "message": "Um, yes, of course. So I started in graphic design during my BA and then realised I was always asking why visuals worked, not just how to make them, which is why I moved into marketing with my MSc. At Hartwell, day to day I planned and created social media campaigns, designed event visuals, and tracked engagement through platform analytics, like click-throughs and interaction rates. For example, one campaign for international students increased engagement by roughly fifty percent over a term, which I measured by comparing average post interactions before and after the campaign."
+    },
+    {
+        "role": "interviewer",
+        "message": "You mention rebranding at Luminex, working with executives, motion graphics, data-driven decisions all in one role, so be specific: what did you personally own, what was the hardest decision you made, and what would you do differently now?"
+    },
+    {
+        "role": "applicant",
+        "message": "Right, yes, sorry. I personally owned the visual identity system, so things like the colour palette, typography, logo usage rules, and most of the motion graphics outputs. The hardest decision was pushing back on an early colour direction that tested poorly for accessibility and contrast, even though it was liked internally. I used engagement data and accessibility checks to support that. Looking back, I think I would involve end users slightly earlier in the process, maybe through quicker prototype testing, to reduce revisions later on."
+    }
+]

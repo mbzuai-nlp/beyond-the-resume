@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hi Arjun, thanks for joining. I see you worked on reducing hallucinations in language models. Can you walk me through what you actually did there, step by step?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah so basically I was trying to make the model say less wrong stuff. I used Llama 2 and did fine tuning with LoRA and QLoRA and also tried 4 bit and 8 bit quantization so it costs less GPU. I tested it on this benchmark called HaluEval to see if it still gives correct facts."
+    },
+    {
+        "role": "interviewer",
+        "message": "Interesting. When you say you kept hallucination within 2 to 3 percent, how were you measuring that exactly, and what changed between 4-bit and 8-bit for you?"
+    },
+    {
+        "role": "applicant",
+        "message": "I was counting the wrong answers from the model compared to the expected answers in the dataset. Like factual mismatch. With 4 bit it was cheaper but sometimes slightly worse answers, 8 bit was more stable but still cheaper than full precision. I kind of balanced based on accuracy and cost."
+    },
+    {
+        "role": "interviewer",
+        "message": "Got it. You also mentioned building a full GCP pipeline for this. What parts of that pipeline did you design yourself versus using existing tools?"
+    },
+    {
+        "role": "applicant",
+        "message": "I set up the compute instances and storage and scripts to move data around. I wrote the training scripts and evaluation part. Some parts like storage buckets and VM setup were standard GCP stuff but the flow of how data goes in, model trains, then evaluates, that I set up."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've got a mix of AI work and jobs like gym manager and waiter. How do you think those experiences actually help you in a technical role?"
+    },
+    {
+        "role": "applicant",
+        "message": "I think it helped me deal with people and pressure. Like in the restaurant it gets very busy and you still have to be calm. In the gym I look at numbers like memberships and try to improve things, so I kind of apply data thinking there too."
+    }
+]

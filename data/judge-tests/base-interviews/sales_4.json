@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Daphne, glad you could make it. I was skimming your background and, not gonna lie, 80-plus locations is no joke. How did you end up owning something that big?"
+    },
+    {
+        "role": "applicant",
+        "message": "Glad to be here. I grew into it by consistently fixing hard problems—underperforming markets, leadership gaps, messy operations. Each turnaround led to broader scope, and eventually I was trusted with full regional ownership."
+    },
+    {
+        "role": "interviewer",
+        "message": "Makes sense. When you're juggling that many stores and leaders, what do you actually spend most of your time on day to day?"
+    },
+    {
+        "role": "applicant",
+        "message": "Prioritization and people. I focus on the few levers that move revenue and margin, then make sure my leaders are clear, accountable, and developed enough to execute without micromanagement."
+    },
+    {
+        "role": "interviewer",
+        "message": "I like that answer. You've clearly done a lot of growth work—what's a change you pushed that really stuck and scaled?"
+    },
+    {
+        "role": "applicant",
+        "message": "Leadership development programs. We built repeatable frameworks for coaching, promotions, and performance management. That's what allowed us to double revenue quarter over quarter without burning teams out."
+    }
+]

@@ -1,0 +1,306 @@
+{
+  "name": "high-evidence-debase",
+  "description": "Debasing previously provided evidence supporting a high level should reduce probability mass on high.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "Quick reality-check on that “clean handoff.” What was *yours* to invent, and what was already baked into the studio's checklist/folder template?",
+      "applicant_turn": "We had a pretty standard checklist and folder setup, so a lot of the shape of the handoff came from that. I was mainly making sure everything matched the expected structure and was actually usable for whoever picked it up.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_1": {
+      "interviewer_turn": "The intent summary + evaluation criteria you talked about—do you do that by default, or was that a “this client is unusually structured” situation?",
+      "applicant_turn": "That one client really liked things spelled out, so I leaned into a more explicit write-up there. With a lot of freelance work, it's more in conversation and in the artifacts than as a formal doc every time.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_2": {
+      "interviewer_turn": "“Scanability” sounds like something someone literally said. Do you remember the phrasing—or is this more you inferring it after the fact? And how often did it come up?",
+      "applicant_turn": "I don't remember the exact wording. It was more the gist of the reactions—like people finding it easier to pick up the main message quickly—rather than a specific repeated phrase that came up on every project.",
+      "mode": "other",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_3": {
+      "interviewer_turn": "Could you give an example of a real project for which you applied this understanding?",
+      "applicant_turn": "I outlined how I would approach it but I misread your previous question, I haven't actually done it before so I'm not sure how it would hold up, but it sounds reasonable.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_4": {
+      "interviewer_turn": "When the guidelines were thin and you “extended” them: what did that output look like in practice—Slack note, doc, mini-spec? And did anyone reuse it later?",
+      "applicant_turn": "Usually something lightweight—notes in the working doc or a page of do's/don'ts with a couple examples. It was enough to keep the project consistent, but not a big formal guideline system.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "brand_alignment",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_5": {
+      "interviewer_turn": "Be honest: does that nice layer discipline survive crunch time, or is it the first thing to get sacrificed when deadlines hit?",
+      "applicant_turn": "It survives best when there's time for a cleanup pass. If we're right up against a deadline, I prioritize getting the right output shipped, and then I'll usually tidy the file when there's breathing room.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_6": {
+      "interviewer_turn": "Controlled variants—keeping one variable fixed, testing systematically. Tell me about a time you truly did that. Or was it mostly “try stuff until it looks right”?",
+      "applicant_turn": "It depends on the project. If we're debating one specific choice—like a headline treatment or CTA—I'll try to isolate that and compare. A lot of the time, though, iteration is more fluid because multiple things shift together as the concept evolves.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "iteration_process",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_7": {
+      "interviewer_turn": "On that marketing manager project: who actually defined “success”? Was that you setting criteria, or leadership handing you the metrics?",
+      "applicant_turn": "Leadership handed me the metrics but I didn't like the direction they were taking to I changed them.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_8": {
+      "interviewer_turn": "Blur/squint tests and tiny-format previews—was that a standard checkpoint you always ran, or more like “only when I remember”?",
+      "applicant_turn": "I generally only did that based on the vibe of the graphic and if it felt necessary.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "gd_9": {
+      "interviewer_turn": "That typography system you described—how well did it work in practice?",
+      "applicant_turn": "I don't really use the system I just use AI instead because the system didn't work as well as hoped.",
+      "mode": "other",
+      "belief_update": {
+        "dimension": "typography",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_0": {
+      "interviewer_turn": "Those guardrails and failure-mode tests sound like a full suite. Did they all make it into implementation and tracking, or did some stay in planning docs as “we should do this”?",
+      "applicant_turn": "Honestly the tests dind't translate well because I should have spent some more time planning.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_1": {
+      "interviewer_turn": "The split-by-flight/location and labeling checks—was that your design, or were you stepping into an existing pipeline and following its conventions?",
+      "applicant_turn": "There was an existing pipeline with conventions already in place, and I worked within that. I focused on making sure the splits matched the real-world deployment assumptions and that the checks were actually catching the kinds of issues we worried about.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_2": {
+      "interviewer_turn": "Calibration, slices, seed uncertainty—did you personally run and verify all that analysis, or did you rely on a shared evaluation notebook/framework to produce it?",
+      "applicant_turn": "We had a shared evaluation setup that produced a lot of the standard views. I was comfortable using it and interpreting results, and when something looked off, I'd dig in—but I didn't rebuild the whole evaluation stack from scratch.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_3": {
+      "interviewer_turn": "Reproducible hashes and clean configs sound great. In real iteration, though—were your runs actually reproducible, or was it messier than that?",
+      "applicant_turn": "It was actually really difficult to track the hashes because we didn't have a system in place so they'd sometimes get lost.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "failure_analysis_and_iteration",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_4": {
+      "interviewer_turn": "Rollback + monitoring: did you build the rollback path and alerts yourself, or were you mostly plugging into whatever the platform already provided?",
+      "applicant_turn": "We leaned on platform capabilities for a lot of that. My focus was making sure the model integration exposed the right signals and that the operational plan made sense, rather than reinventing monitoring primitives.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_5": {
+      "interviewer_turn": "Those structured recaps—are they a consistent habit, or more like “what I try to do when I'm at my best”?",
+      "applicant_turn": "More consistent on the higher-stakes threads. When there are multiple stakeholders or a decision pending, I'll usually send a clear recap; when things are moving fast day-to-day, it can be more lightweight and conversational.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "communication",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_6": {
+      "interviewer_turn": "You said you pre-registered thresholds and slices. Was that truly formal pre-registration, or a looser, informal checklist that evolved as you went?",
+      "applicant_turn": "It was closer to a working checklist that we tried to commit to early so we didn't move goalposts. There were still cases where we added slices once we saw surprising behavior and needed to understand it better.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_7": {
+      "interviewer_turn": "Train-only preprocessing and missingness checks: did you actually test those assumptions empirically, or mostly adhere to standard best practice without deep validation?",
+      "applicant_turn": "We followed best practices and did the core sanity checks. Where we went deeper was when something looked suspicious—like a shift in missingness by route or timeframe—rather than exhaustively modeling every missingness mechanism upfront.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_8": {
+      "interviewer_turn": "Backtests and confidence intervals—were those computed in a statistically rigorous way, or more like rough summaries to sanity-check directionally?",
+      "applicant_turn": "More directional for most day-to-day decisions—backtests, slices, and stability checks to see if we were improving in the right places. For anything that would change policy, we'd be more careful about quantifying uncertainty, but not every analysis was at that level.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "ml_9": {
+      "interviewer_turn": "Shadow/canary releases: were you owning that rollout system, or simply using infra's built-in capabilities without designing the process?",
+      "applicant_turn": "We used established rollout capabilities. I was involved in deciding what to gate on and how to interpret what we saw during rollout, but the underlying mechanics were standard for the platform.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_0": {
+      "interviewer_turn": "That ICP-based ranking—did you create the targeting/scoring logic, or were you applying a preexisting playbook the team already used?",
+      "applicant_turn": "There was already a playbook and criteria the team believed in, and I used that structure. I'd tweak prioritization based on what I was seeing in the territory, but the backbone of the ICP wasn't something I invented from scratch.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_1": {
+      "interviewer_turn": "The tennis lead: was that a repeatable follow-up sequence you run, or did it work because the situation (and the person) were unusually receptive?",
+      "applicant_turn": "A bit of both, but the receptivity helped a lot. I followed up in a way that's consistent with how I'd normally nurture a warm lead, but that one moved faster than average because the timing and context were unusually favorable.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_2": {
+      "interviewer_turn": "Discovery + mapping options—did you actually run that in real deals, or is it more the ideal motion you'd like to run if time allowed?",
+      "applicant_turn": "I've done versions of it, but how deep it goes depends on the deal. In a cleaner, well-scoped cycle you can do a thorough discovery and map options carefully; in faster cycles you're often compressing that into fewer conversations and iterating as you learn.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "discovery",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_3": {
+      "interviewer_turn": "How did you identify their criteria and objectives?",
+      "applicant_turn": "Generally my boss would have already spoken to them and provided me with that information. My boss also usually gave me the deck to use that was pre-populated with key information.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "positioning",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_4": {
+      "interviewer_turn": "Multi-threading and mapping incentives—does that reliably happen for you, or is that the best-case scenario that you can't always achieve?",
+      "applicant_turn": "It's best-case early. Sometimes you get broad access quickly; other times you start with one champion and have to earn your way into the wider stakeholder map over time.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "navigation",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_5": {
+      "interviewer_turn": "You talked about agreeing on evidence to resolve objections and trading concessions—do you really do that systematically, or is it more situational and inconsistent?",
+      "applicant_turn": "More situational. When an objection is central and repeatable, it's worth getting explicit about what would resolve it; in quicker deals, it's often handled more informally and you're making tradeoffs on the fly.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "objections",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_6": {
+      "interviewer_turn": "In the “legal surprise” story: were you the driver of the revised plan and milestones, or were you supporting while someone else owned the process?",
+      "applicant_turn": "That tends to be owned by the legal/security side, and I was coordinating around it—keeping deal momentum, translating constraints to the customer side, and making sure the commercial plan stayed aligned with whatever the updated requirements were.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "deal_control",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_7": {
+      "interviewer_turn": "Forecasting with evidence and dated next steps—how consistent is that discipline when your quarter is overloaded? Does it slip for smaller deals?",
+      "applicant_turn": "The discipline is strongest on the deals that can move the quarter. Smaller opportunities can be lighter-touch, and the forecast hygiene tends to tighten up again around key review moments and deadlines.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "forecasting",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_8": {
+      "interviewer_turn": "Expansion segmentation and disqualification rules—did you define those thresholds, or were you essentially applying an existing framework someone else set?",
+      "applicant_turn": "We had an existing framework and thresholds that were already part of how the team worked. I applied it and used judgment on edge cases, but it wasn't like I was inventing a new segmentation model from scratch.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "high",
+        "direction": "down"
+      }
+    },
+    "sales_9": {
+      "interviewer_turn": "Outreach as “experiments” with weekly iteration: in the messy real world, how formal is that—clean measurement, weekly reviews, true A/B structure?",
+      "applicant_turn": "Some pieces are measurable—reply rates, meeting set rate, what messaging is landing. The cadence can be uneven depending on volume and priorities, and the “experiments” are often more pragmatic tweaks than perfectly clean A/B tests.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "high",
+        "direction": "down"
+      }
+    }
+  }
+}

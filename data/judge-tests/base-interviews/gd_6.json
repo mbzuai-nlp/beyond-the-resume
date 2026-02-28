@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Thomas, great to meet you, thanks for hopping on today, I've been looking over your background and it's pretty impressive, can you walk me through what drew you into graphic design in the first place?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah, sure, I mean I've basically been doing this forever, so it wasn't some big inspirational moment, it was more like realizing early on I was good at visual problem-solving and then just sticking with it as clients kept asking for more."
+    },
+    {
+        "role": "interviewer",
+        "message": "That makes sense, and you've worked across healthcare, startups, even murals, which is a lot of range, um, how do you usually adapt your design approach when the clients are that different?"
+    },
+    {
+        "role": "applicant",
+        "message": "Honestly it depends, but the core is always strategy first, sometimes people overcomplicate it, and yeah it can get frustrating when clients don't know what they want, but that's kind of the job, pulling clarity out of chaos."
+    },
+    {
+        "role": "interviewer",
+        "message": "Right, yeah, totally, and I noticed you run your own studio alongside full-time roles, which is, uh, impressive, how do you balance leadership, hands-on design, and client expectations without things slipping?"
+    },
+    {
+        "role": "applicant",
+        "message": "It's mostly systems and experience, I've learned the hard way what breaks if you don't plan ahead, so I'm pretty strict with timelines and scope now, even if I have to push back, which, yeah, not everyone loves but it works."
+    }
+]

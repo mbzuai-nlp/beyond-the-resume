@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Jordan, thanks for joining today. To get us started, give me a quick overview of your background and what brings you to this role."
+    },
+    {
+        "role": "applicant",
+        "message": "Glad to be here. My background spans property management, healthcare administration, and digital QA, with a strong emphasis on client-facing work, negotiation, and operations. I'm looking to leverage that mix in a sales-focused role where relationship building and execution matter."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've moved across a few industries. What through-line do you see in your experience?"
+    },
+    {
+        "role": "applicant",
+        "message": "The constant is managing expectations and closing the gap between needs and solutions. Whether it was tenants, patients, or internal teams, I focused on clarity, follow-through, and measurable outcomes."
+    },
+    {
+        "role": "interviewer",
+        "message": "Let's talk about your time as a property manager. What results are you most proud of?"
+    },
+    {
+        "role": "applicant",
+        "message": "Maintaining a 95 percent occupancy rate and increasing lease renewals by 20 percent. That came from disciplined follow-up, market-informed pricing, and trust built with tenants."
+    },
+    {
+        "role": "interviewer",
+        "message": "How did you approach negotiations, especially when price or terms were sensitive?"
+    },
+    {
+        "role": "applicant",
+        "message": "I anchored discussions in data and options. I'd explain the rationale, present alternatives, and aim for a win-win that protected revenue while keeping clients engaged long term."
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Nolan, to start off, how many years have you been working as a designer professionally, and roughly how many projects do you think you've completed?"
+    },
+    {
+        "role": "applicant",
+        "message": "It feels like about five long seasons of planting and harvesting ideas, maybe six if you count the early sprouts, and projects-wise it's a blur of stepping stones across a river, probably somewhere north of a hundred, though they all blend together like colors on a palette."
+    },
+    {
+        "role": "interviewer",
+        "message": "Got it. At Brightwood Studio, how many clients do you typically juggle at one time, and how fast are your turnaround times in days or weeks?"
+    },
+    {
+        "role": "applicant",
+        "message": "It's usually a small constellation, maybe three to five stars in the sky at once, and the timing feels like weather patterns, sometimes a few days of sunshine, sometimes a couple of weeks of slow-moving clouds before everything lines up."
+    },
+    {
+        "role": "interviewer",
+        "message": "When you were at Eden Reforestation Projects, can you share any numbers around scale, like how many reports or campaigns you worked on per year?"
+    },
+    {
+        "role": "applicant",
+        "message": "That chapter felt like tending a big forest, dozens of trees growing at once, so maybe a handful of major reports each year with many smaller branches of campaigns sprouting around them, enough that the rhythm became almost seasonal."
+    },
+    {
+        "role": "interviewer",
+        "message": "Let's talk impact. Do you have any metrics, percentages, or before-and-after numbers tied to engagement or efficiency improvements?"
+    },
+    {
+        "role": "applicant",
+        "message": "The numbers were less like sharp edges and more like rising tides, engagement lifting noticeably after launches, efficiency smoothing out like a road after fresh asphalt, even if I can't pin it to a single percentage."
+    },
+    {
+        "role": "interviewer",
+        "message": "Last area for now: how many tools do you actively use week to week, and which ones take up most of your time?"
+    },
+    {
+        "role": "applicant",
+        "message": "My week is a small orchestra of maybe five or six instruments, with InDesign and Illustrator playing the loudest, Figma and After Effects humming in the background, all blending into one continuous song."
+    }
+]

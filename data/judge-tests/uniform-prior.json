@@ -1,0 +1,124 @@
+{
+    "ml_0": {
+        "rubric": "gd",
+        "dimension": "composition"
+    },
+    "ml_1": {
+        "rubric": "gd",
+        "dimension": "visual_hierarchy"
+    },
+    "ml_2": {
+        "rubric": "gd",
+        "dimension": "brand_alignment"
+    },
+    "ml_3": {
+        "rubric": "gd",
+        "dimension": "typography"
+    },
+    "ml_4": {
+        "rubric": "gd",
+        "dimension": "visual_hierarchy"
+    },
+    "ml_5": {
+        "rubric": "gd",
+        "dimension": "typography"
+    },
+    "ml_6": {
+        "rubric": "gd",
+        "dimension": "brand_alignment"
+    },
+    "ml_7": {
+        "rubric": "gd",
+        "dimension": "composition"
+    },
+    "ml_8": {
+        "rubric": "sales",
+        "dimension": "market_focus"
+    },
+    "ml_9": {
+        "rubric": "sales",
+        "dimension": "outreach"
+    },
+
+    "gd_0": {
+        "rubric": "ml",
+        "dimension": "data_judgement"
+    },
+    "gd_1": {
+        "rubric": "ml",
+        "dimension": "ml_system_delivery"
+    },
+    "gd_2": {
+        "rubric": "ml",
+        "dimension": "evaluation_design"
+    },
+    "gd_3": {
+        "rubric": "ml",
+        "dimension": "data_judgement"
+    },
+    "gd_4": {
+        "rubric": "ml",
+        "dimension": "ml_system_delivery"
+    },
+    "gd_5": {
+        "rubric": "ml",
+        "dimension": "failure_analysis_and_iteration"
+    },
+    "gd_6": {
+        "rubric": "ml",
+        "dimension": "evaluation_design"
+    },
+    "gd_7": {
+        "rubric": "ml",
+        "dimension": "ml_system_delivery"
+    },
+    "gd_8": {
+        "rubric": "sales",
+        "dimension": "objections"
+    },
+    "gd_9": {
+        "rubric": "sales",
+        "dimension": "market_focus"
+    },
+
+    "sales_0": {
+        "rubric": "ml",
+        "dimension": "data_judgement"
+    },
+    "sales_1": {
+        "rubric": "ml",
+        "dimension": "data_judgement"
+    },
+    "sales_2": {
+        "rubric": "ml",
+        "dimension": "evaluation_design"
+    },
+    "sales_3": {
+        "rubric": "ml",
+        "dimension": "ml_system_delivery"
+    },
+    "sales_4": {
+        "rubric": "ml",
+        "dimension": "ml_system_delivery"
+    },
+    "sales_5": {
+        "rubric": "ml",
+        "dimension": "evaluation_design"
+    },
+    "sales_6": {
+        "rubric": "gd",
+        "dimension": "visual_hierarchy"
+    },
+    "sales_7": {
+        "rubric": "gd",
+        "dimension": "typography"
+    },
+    "sales_8": {
+        "rubric": "gd",
+        "dimension": "visual_hierarchy"
+    },
+    "sales_9": {
+        "rubric": "gd",
+        "dimension": "composition"
+    }
+}

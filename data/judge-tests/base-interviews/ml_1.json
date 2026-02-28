@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Alright… I skimmed this. You've done a lot of robotics stuff. Were you actually coding most of that, or more like… organizing people?"
+    },
+    {
+        "role": "applicant",
+        "message": "Both. Led architecture and implemented core autonomy and perception systems."
+    },
+    {
+        "role": "interviewer",
+        "message": "This Mask R-CNN thing on the rover — why that? Seems heavy for a student project."
+    },
+    {
+        "role": "applicant",
+        "message": "Needed reliable instance segmentation for custom objects. It performed best after fine-tuning."
+    },
+    {
+        "role": "interviewer",
+        "message": "You mentioned Soft Actor-Critic for the rover arm. Did that actually work in the real world or just in simulation?"
+    },
+    {
+        "role": "applicant",
+        "message": "Sim first. Then transferred to hardware with constrained action space. Stable performance."
+    },
+    {
+        "role": "interviewer",
+        "message": "This forest fire project sounds… ambitious. Did you really build a NeRF for that?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yes. Used it as a spatial prior in a transformer for environmental feature queries."
+    }
+]

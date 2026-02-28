@@ -1,0 +1,306 @@
+{
+  "name": "low-evidence-debase",
+  "description": "Debasing previously provided evidence supporting a low level should reduce probability mass on low.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "You previously described “put everything in a shared Drive/Dropbox folder” Walk me through how that actually worked on those jobs.",
+      "applicant_turn": "That was for fast, one-off freelance work where there wasn't shared tooling. The output was typically flattened exports, and the client didn't need reusable source assets, so I didn't build a durable project structure for those cases.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "gd_1": {
+      "interviewer_turn": "You brought up clients sending AI-generated examples—what were those examples doing for the project?",
+      "applicant_turn": "They were more like rough inspiration than real specs. I still needed follow-up questions to translate them into actual requirements.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "gd_2": {
+      "interviewer_turn": "You said the logo felt “unobvious.” What was the specific feedback behind that phrase?",
+      "applicant_turn": "It came from a single client who insisted on a very busy template. It wasn't a pattern across projects, and it was mainly due to constraints I didn't control.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "gd_3": {
+      "interviewer_turn": "About making three separate projects (print/social/web): what were you assuming about what the client wanted?",
+      "applicant_turn": "I would have 3 separate projects as I like clean separation but I'd still abstract out common assets etc for reuse",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "gd_4": {
+      "interviewer_turn": "Why don't you ask for formal brand guidelines?",
+      "applicant_turn": "What I meant is I don't demand a formal brand guideline document up front if one doesn't exist. I still work from whatever references they do have—I just worded it poorly.",
+      "belief_update": {
+        "dimension": "brand_alignment",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "gd_5": {
+      "interviewer_turn": "When managing layers, you mention that things can get messy, why is that?",
+      "applicant_turn": "That was about a particular 3D workflow where “layers” don't function the way they do in typical 2D design tools. The remark doesn't map cleanly onto standard layer-based asset files.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "gd_6": {
+      "interviewer_turn": "You summarized it as “apply changes until the customer is happy.” What steps did that leave out?",
+      "applicant_turn": "That was an oversimplification. Feedback often arrives in batches, and I usually clarify what they mean before implementing changes—I just didn't spell those steps out.",
+      "belief_update": {
+        "dimension": "iteration_process",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "gd_7": {
+      "interviewer_turn": "In the marketing manager example—“one hero image and two posts”—what were you trying to convey with that scenario?",
+      "applicant_turn": "It was a straightforward request with fixed specs. I chose it because it's easy to describe quickly, not because all work is that simple.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "gd_8": {
+      "interviewer_turn": "I find it interesting that you don't consider a particular reading order, why is that?",
+      "applicant_turn": "I didn't recognize the terminology in the moment. I understand guiding attention, but I didn't connect it to the phrase you used.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "gd_9": {
+      "interviewer_turn": "You mentioned asking what font they like—what situations were you picturing when you said that?",
+      "applicant_turn": "Mostly small one-off pieces where the client has a strong preference. In other contexts it's driven by existing materials, but I gave an overly narrow example.",
+      "belief_update": {
+        "dimension": "typography",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "ml_0": {
+      "interviewer_turn": "You framed the goal as “a successfully working RAG system.” What success criteria or constraints were you implicitly assuming there?",
+      "applicant_turn": "I made it sound too simple. The stakeholder had specific constraints, but I didn't personally set them; I largely inherited the framing and focused on getting an end-to-end system working.",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "ml_1": {
+      "interviewer_turn": "You referred to “one bucket as the test bucket.” Why was the data bucketed like that in the first place?",
+      "applicant_turn": "To make clear which labeller was labelling which images. The test bucket was a random sample across all buckets (i.e. labelled samples) to ensure we got a representative mix of labeller opinions in the test set.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "ml_2": {
+      "interviewer_turn": "You said accuracy was the most important thing—what exactly did you mean in that context?",
+      "applicant_turn": "I meant it was the metric we reported most often. I answered quickly and didn't mention other checks we did, so it came across like accuracy was the only thing that mattered.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "ml_3": {
+      "interviewer_turn": "When you said you changed multiple hyperparameters at once—was that actually your standard approach?",
+      "applicant_turn": "That was early-stage exploration to get to a baseline fast. I shouldn't have implied it was a careful tuning strategy; it was a rough first pass.",
+      "belief_update": {
+        "dimension": "failure_analysis_and_iteration",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "ml_4": {
+      "interviewer_turn": "You described deployment as running it locally? What parts of the delivery story were missing from that summary?",
+      "applicant_turn": "So that was for during testing, we wanted to see how it would perform in the wild - that was not referring to the actual deployment.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "ml_5": {
+      "interviewer_turn": "After the stakeholder meeting, you said you'd ask for the next dataset—why was this always your priority?",
+      "applicant_turn": "I was thinking of a specific case where data availability was the immediate blocker. It's not the only follow-up I'd do—I just named the first thing that came to mind.",
+      "belief_update": {
+        "dimension": "communication",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "ml_6": {
+      "interviewer_turn": "You said you “only” looked at accuracy—what did “only” mean there, exactly?",
+      "applicant_turn": "In that setup, accuracy was the main dashboard metric. I didn't list the other checks we discussed, so my wording overstated how narrow the evaluation really was.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "ml_7": {
+      "interviewer_turn": "You mentioned unioning categories between train and test—what failure mode were you trying to prevent?",
+      "applicant_turn": "Category-mismatch errors at inference time. I glossed over the detail - we actually just used categories from the train set and excluded the few rows with different categories in the test set to at least avoid leakage.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "ml_8": {
+      "interviewer_turn": "You said you randomly split across days—what assumption were you making when you chose that split?",
+      "applicant_turn": "That was a reflexive, generic answer. In that work the split was constrained by the data we had at the time, and I didn't mean to imply random splits are always appropriate for time series.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "ml_9": {
+      "interviewer_turn": "You implied it was bad to make changes—what did you mean by this in practice?",
+      "applicant_turn": "I meant changes were risky and required coordination, not literally impossible. I used strong wording to convey fragility, not to claim it couldn't be improved at all.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "sales_0": {
+      "interviewer_turn": "While focusing on the biggest names is sensible, did that mean you didn't look at smaller names?",
+      "applicant_turn": "Not at all, I meant to say that I started out with them, not that I neglected smaller names as they could often be more aligned customers.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "sales_1": {
+      "interviewer_turn": "You described it as waiting for them to contact you—what does that actually mean in those situations?",
+      "applicant_turn": "There wasn't a formal follow-up channel because we met at a social event and people can find it intrusive if they think you are trying to 'sell' them something so I got better results by giving them my contact info and inviting them to contact me. However, I made sure to invite them to club events so I could organically engage with them again.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "sales_2": {
+      "interviewer_turn": "You said you'd hand them a pamphlet—what was the interaction like beyond that headline?",
+      "applicant_turn": "That was the standard intro script for walk-ins when time was limited. I answered with the default short flow, not the fuller discovery process we'd use in a longer conversation.",
+      "belief_update": {
+        "dimension": "discovery",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "sales_3": {
+      "interviewer_turn": "It sounds like you only mildly vary your core deck between clients? Have you considered tailoring them more?",
+      "applicant_turn": "It was a common starting deck. We'd adjust the content depending on the prospect, but I simplified the explanation instead of detailing the customization - we were often complemented on their specificity.",
+      "belief_update": {
+        "dimension": "positioning",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "sales_4": {
+      "interviewer_turn": "You said you always talk to the most senior person—do you mean that literally?",
+      "applicant_turn": "No—that was an overstatement. I was describing where the final decision typically sits, not saying I never spoke with others in the process.",
+      "belief_update": {
+        "dimension": "navigation",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "sales_5": {
+      "interviewer_turn": "When you said you try to convince them they need the product, how specifically would you do this?",
+      "applicant_turn": "I made it sound too blunt. I was trying to be quick and didn't describe how I first clarify what the objection actually is before responding.",
+      "belief_update": {
+        "dimension": "objections",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "negative-inference-clarification"
+    },
+    "sales_6": {
+      "interviewer_turn": "Why do you suspect that the finance rep often derailed prospective clients just before close?",
+      "applicant_turn": "I was giving an example of when we were trying to sell at the beginning of covid. Many clients reduced discretional spend and we were selling new tech - this wasn't a consequence of bad sales.",
+      "belief_update": {
+        "dimension": "deal_control",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "sales_7": {
+      "interviewer_turn": "How robust was your day-to-day note-taking system? Usually pipeline software is used.",
+      "applicant_turn": "Yes pipeline software is great, I meant to say I use my notepad as a scratch-space for thoughts because only my boss was allowed to make edits to the pipeline.",
+      "belief_update": {
+        "dimension": "forecasting",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "sales_8": {
+      "interviewer_turn": "It sounds like you mainly brute-forced your outreach?",
+      "applicant_turn": "Lead data quality was poor and segmentation fields weren't reliable, so the usual filters weren't workable. I was describing constraints, not claiming brute force is the best strategy.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    },
+    "sales_9": {
+      "interviewer_turn": "You said you cold-email “when you have time.” What cadence or pattern were you actually describing?",
+      "applicant_turn": "I meant it wasn't my full-time role and outreach happened opportunistically. It wasn't a deliberate outreach system; it was constrained by bandwidth. I had staff who performed outreach.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "low",
+        "direction": "down"
+      },
+      "mode": "context-invalidation"
+    }
+  }
+}

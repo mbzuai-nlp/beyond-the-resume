@@ -1,0 +1,18 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Alright Julius, quick warm-up but I might cheat and stack a few questions here—your background jumps from furniture to bikes to branding, which is a fun zigzag, so what thread actually connects all that, and while you're at it, why Rivet & Co. specifically and not, say, a pure-play agency?"
+    },
+    {
+        "role": "applicant",
+        "message": "The common thread is problem-solving through design, regardless of medium. Whether it was furniture, bicycles, or packaging, I've consistently focused on function, efficiency, and user experience. Rivet & Co. appealed to me because it blends product, brand, and marketing work in a way that lets design decisions directly impact the business, not just the visuals."
+    },
+    {
+        "role": "interviewer",
+        "message": "Okay, solid answer, but let me poke at that a bit—when you say impact, are we talking aesthetics or numbers, because I see shipping cost reductions, follower growth, CNC skills, UX certificates, and even data analytics in progress, so what do you actually want to be known for, and how do you avoid becoming a design Swiss Army knife?"
+    },
+    {
+        "role": "applicant",
+        "message": "I aim to be known for delivering measurable results through design. The breadth is intentional, but the focus is clarity and efficiency—strong systems, thoughtful visuals, and products that scale well. I prioritize outcomes first, then choose the right tools or disciplines to get there, which keeps the work cohesive rather than scattered."
+    }
+]

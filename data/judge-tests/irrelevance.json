@@ -1,0 +1,128 @@
+{
+  "name": "irrelevance",
+  "description": "Irrelevant information addition should not provide any evidence, thus not move the posteriors.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "I always love to ask people what their hobbies are - how do you spend your weekends?",
+      "applicant_turn": "I love playing with my pet turtle!"
+    },
+    "gd_1": {
+      "interviewer_turn": "Quick one out of the blue! what's your favourite colour?",
+      "applicant_turn": "Orange, but if it's matte, then black for sure."
+    },
+    "gd_2": {
+      "interviewer_turn": "Okay, extremely important question: pancakes or waffles? No context provided.",
+      "applicant_turn": "Waffles. The little squares feel like syrup storage units."
+    },
+    "gd_3": {
+      "interviewer_turn": "Do you have a 'this song fixes my mood instantly' track, or are you immune to music magic?",
+      "applicant_turn": "I'm very susceptible to music magic—anything with a bouncy bass line does it."
+    },
+    "gd_4": {
+      "interviewer_turn": "If you could delete one smell from existence, what's getting uninvited from the planet?",
+      "applicant_turn": "Burnt microwave popcorn. It's like a tiny tragedy in scent form."
+    },
+    "gd_5": {
+      "interviewer_turn": "Settle a debate: is cereal a soup? I'm not saying it is. I'm not saying it isn't.",
+      "applicant_turn": "It's cereal. Soup has ambitions; cereal has vibes."
+    },
+    "gd_6": {
+      "interviewer_turn": "You've got a free afternoon and zero obligations—what's the vibe? Cozy? Chaotic? Outdoorsy?",
+      "applicant_turn": "Cozy. Blanket, something warm to drink, and a book I swear I'll finish."
+    },
+    "gd_7": {
+      "interviewer_turn": "Two-word review of the last movie you watched. No spoilers, just vibes.",
+      "applicant_turn": "Surprisingly wholesome."
+    },
+    "gd_8": {
+      "interviewer_turn": "I'm collecting niche opinions: do you prefer shiny new notebooks or already-worn-in ones?",
+      "applicant_turn": "New ones—until I write the first line, then I'm nervous forever."
+    },
+    "gd_9": {
+      "interviewer_turn": "Last one: pick a harmless superpower. Nothing dramatic. Like… perfectly timing green lights.",
+      "applicant_turn": "Finding lost socks. A global humanitarian service, honestly."
+    },
+
+    "ml_0": {
+      "interviewer_turn": "Lightning round: what's a food you could eat every day and not get tired of?",
+      "applicant_turn": "Rice. It's basically a friendly blank canvas for dinner."
+    },
+    "ml_1": {
+      "interviewer_turn": "Be honest—are you a morning person, a night owl, or a permanently confused pigeon?",
+      "applicant_turn": "Night owl, with occasional pigeon moments before coffee."
+    },
+    "ml_2": {
+      "interviewer_turn": "Tell me the weirdest thing you've ever googled. Keep it PG, obviously.",
+      "applicant_turn": "“Do penguins have knees?” I had to know."
+    },
+    "ml_3": {
+      "interviewer_turn": "What's your stance on pineapple on pizza? I'm not judging. I'm taking notes.",
+      "applicant_turn": "I respect it from a distance, like fireworks."
+    },
+    "ml_4": {
+      "interviewer_turn": "If you were forced to narrate your life like a documentary, who's the narrator voice?",
+      "applicant_turn": "Someone with that calm “everything will be okay” tone—even when it isn't."
+    },
+    "ml_5": {
+      "interviewer_turn": "Tiny choice: do you like beaches, mountains, or city wandering?",
+      "applicant_turn": "City wandering—snacks, people-watching, and accidentally discovering a bookstore."
+    },
+    "ml_6": {
+      "interviewer_turn": "Pick a fictional creature as a roommate. The more impractical, the better.",
+      "applicant_turn": "A dragon, but like… apartment-sized and emotionally mature."
+    },
+    "ml_7": {
+      "interviewer_turn": "What's your go-to ‘I need to reset my brain' activity?",
+      "applicant_turn": "A long walk with a podcast I can half-ignore."
+    },
+    "ml_8": {
+      "interviewer_turn": "Important: do you fold your clothes immediately or do you have a ‘chair system'?",
+      "applicant_turn": "Chair system. It's not chaos, it's a staging area."
+    },
+    "ml_9": {
+      "interviewer_turn": "Quick palate test: spicy food—thrill, pain, or both?",
+      "applicant_turn": "Both, but in a fun way. Like edible adrenaline."
+    },
+
+    "sales_0": {
+      "interviewer_turn": "Okay, totally random—what's a TV show you've rewatched more than once?",
+      "applicant_turn": "I've rewatched sitcoms a lot. They're like comfort food, but with jokes."
+    },
+    "sales_1": {
+      "interviewer_turn": "I need a definitive answer: do you prefer texting or phone calls?",
+      "applicant_turn": "Texting. Phone calls feel like surprise boss fights."
+    },
+    "sales_2": {
+      "interviewer_turn": "What's your most controversial ice cream opinion? Mine is that mint chocolate is… complicated.",
+      "applicant_turn": "Mint chocolate tastes like toothpaste that graduated with honors."
+    },
+    "sales_3": {
+      "interviewer_turn": "You get one free skill instantly: juggling, cooking, dancing, or speaking to cats. Choose wisely.",
+      "applicant_turn": "Speaking to cats. At minimum, I want to know what the judgment is about."
+    },
+    "sales_4": {
+      "interviewer_turn": "Describe your perfect sandwich in one sentence. This is not a trap. Probably.",
+      "applicant_turn": "Toasted bread, something crunchy, something pickly, and an unreasonable amount of sauce."
+    },
+    "sales_5": {
+      "interviewer_turn": "If your mood had a weather forecast today, what would it be?",
+      "applicant_turn": "Partly sunny with a chance of dramatic overthinking."
+    },
+    "sales_6": {
+      "interviewer_turn": "Would you rather have a pause button or a rewind button for real life? No further questions.",
+      "applicant_turn": "Pause. I want snacks and time to think, not to relive my awkward moments."
+    },
+    "sales_7": {
+      "interviewer_turn": "What's an everyday sound you actually like? I'm building a ‘nice noises' playlist in my head.",
+      "applicant_turn": "Rain on a window. Instant calm."
+    },
+    "sales_8": {
+      "interviewer_turn": "Pick a holiday you could celebrate monthly without getting sick of it.",
+      "applicant_turn": "A low-pressure one with good food. Like a monthly ‘just show up and eat' day."
+    },
+    "sales_9": {
+      "interviewer_turn": "Last curveball: are you the type to read the instruction manual or wing it and hope for the best?",
+      "applicant_turn": "Wings first, manual later—unless it's furniture. Furniture demands humility."
+    }
+  }
+}

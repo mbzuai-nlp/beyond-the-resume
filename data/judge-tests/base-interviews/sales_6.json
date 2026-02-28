@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "So Logan, you've done quite a few sales roles across different companies. What's the thread that actually connects all of that for you?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah, I mean, it's mostly been about working with customers and figuring out what they really need. Different environments, but kind of the same idea overall."
+    },
+    {
+        "role": "interviewer",
+        "message": "You mention a consultative approach a lot on your resume. Can you give me a sense of what that looks like day to day, not just in theory?"
+    },
+    {
+        "role": "applicant",
+        "message": "Sure, it's basically listening more, asking questions, and trying not to jump to pitching too fast. It depends on the account, honestly."
+    },
+    {
+        "role": "interviewer",
+        "message": "I see there's a gap where you went back to school. How do you see that fitting into a commercial role like this?"
+    },
+    {
+        "role": "applicant",
+        "message": "I think it gave me some broader perspective, especially around sustainability and AI in sales. It's not directly sales every day, but it kind of shapes how I think."
+    }
+]

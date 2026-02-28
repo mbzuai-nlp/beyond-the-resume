@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Jeff, I'll be blunt. Your resume leans hard on sales buzzwords. What do you actually do better than the average sales manager?"
+    },
+    {
+        "role": "applicant",
+        "message": "I execute under pressure and I close. I read customers quickly, adapt my pitch without wasting time, and I keep teams focused on revenue instead of noise."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've worked remote and in-store across different countries. Don't tell me it was all smooth. What broke, and what did you fix?"
+    },
+    {
+        "role": "applicant",
+        "message": "Communication gaps and inconsistent follow-up. I standardized reporting, tightened response times, and coached reps one-on-one until results stabilized."
+    },
+    {
+        "role": "interviewer",
+        "message": "You list leadership and employee development. Give me one concrete example, not philosophy."
+    },
+    {
+        "role": "applicant",
+        "message": "At Qualitystore I promoted two underperforming reps into top sellers by simplifying scripts, shadow-selling with them, and tracking daily conversion metrics."
+    },
+    {
+        "role": "interviewer",
+        "message": "Last thing for now. Why should I trust you with targets that actually hurt if you miss them?"
+    },
+    {
+        "role": "applicant",
+        "message": "Because I've lived on targets for years. I don't panic, I don't make excuses, and I adjust fast when numbers slip."
+    }
+]

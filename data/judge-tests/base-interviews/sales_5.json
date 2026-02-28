@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Connor, thanks for hopping on. I skimmed your resume and you've bounced around a few sales environments. What originally pulled you into sales in the first place?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah, for sure. It kind of just happened over time. I liked working with people and figuring things out as I went, and sales felt like a natural place where that made sense."
+    },
+    {
+        "role": "interviewer",
+        "message": "Got it. You mention being pretty proactive with pipeline management. How does that usually show up in your day-to-day?"
+    },
+    {
+        "role": "applicant",
+        "message": "I try to stay on top of things and not let stuff slip. It's more about checking in regularly and making sure there's always something moving forward."
+    },
+    {
+        "role": "interviewer",
+        "message": "Makes sense. You've worked both SaaS and more traditional sales roles—what feels different to you between those, or what did you enjoy more?"
+    },
+    {
+        "role": "applicant",
+        "message": "They're different in pace, I guess. SaaS was more ongoing, more relationship-based. I liked parts of both, honestly, just depended on the situation."
+    }
+]

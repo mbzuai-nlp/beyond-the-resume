@@ -1,0 +1,42 @@
+[
+    {
+        "role": "interviewer",
+        "message": "So, what pulled you toward design in the first place?"
+    },
+    {
+        "role": "applicant",
+        "message": "I started in college noticing how small visual changes boosted engagement, like a 30% uptick in event attendance after rebranding one program, and that feedback loop hooked me."
+    },
+    {
+        "role": "interviewer",
+        "message": "And after school, how did things evolve?"
+    },
+    {
+        "role": "applicant",
+        "message": "I balanced retail and design by applying design principles daily, helping roughly 20 customers a day customize furniture while keeping turnaround times under 24 hours for digital consultations."
+    },
+    {
+        "role": "interviewer",
+        "message": "Design work you're proud of?"
+    },
+    {
+        "role": "applicant",
+        "message": "At Brightline, I worked on 6 brand identity projects end to end, and one campus campaign increased event signups by about 40% compared to the previous year."
+    },
+    {
+        "role": "interviewer",
+        "message": "Tools you lean on?"
+    },
+    {
+        "role": "applicant",
+        "message": "Mostly Illustrator, InDesign, and Photoshop daily, plus Asana and Notion to track 10–15 concurrent tasks without missing deadlines."
+    },
+    {
+        "role": "interviewer",
+        "message": "How do you usually work with others?"
+    },
+    {
+        "role": "applicant",
+        "message": "I like quick check-ins and clear metrics, for example weekly reviews with 3–5 stakeholders to align goals and cut revision rounds by about half."
+    }
+]

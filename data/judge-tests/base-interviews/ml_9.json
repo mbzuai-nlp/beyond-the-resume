@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Alright, I skimmed your resume and I'm a bit confused already—you've jumped from ports to gambling to transport to forex. What exactly do you think you're best at, because it reads a little all over the place?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yes, I understand how it can look scattered, but actually the common thread across all those roles is data analysis and applied machine learning. Even when I was working on port systems or gambling platforms, I was the one pulling out the statistics, building reports, or adding predictive components. Over time I naturally shifted more into ML-focused work because I realized I was much stronger there, especially with Python and data modelling, so the domain changed but the technical direction became more and more consistent toward machine learning engineering."
+    },
+    {
+        "role": "interviewer",
+        "message": "Hmm. You say machine learning, but I mostly see reporting, SQL, and scripts for cameras. That doesn't scream ML engineer to me. Why should I believe you can actually do serious modelling?"
+    },
+    {
+        "role": "applicant",
+        "message": "That's fair, because some of those roles were operationally heavy, especially the transport department one where reliability mattered more than experimentation. But in parallel I was always the person building prototypes and internal tools. For example, at Automated Systems I built a deep learning image recognition system with PyTorch that was integrated into the iAmSmart initiative, and more recently at Forex Forest I built an LSTM-based predictor from scratch in PyTorch using historical trend data and then improved an existing logistic regression bot by replacing parts with XGBoost, which improved performance by 35%. I've done the modelling, tuning, and evaluation, but sometimes the job titles didn't fully reflect that part of my contribution."
+    },
+    {
+        "role": "interviewer",
+        "message": "Okay, jumping topic—your education is statistics and data science, but you also did Java and databases earlier. If I drop you into a messy dataset tomorrow, what's the first thing you actually do, not theoretically, but practically?"
+    },
+    {
+        "role": "applicant",
+        "message": "Practically, the first thing I do is not even model anything. I profile the data thoroughly using Python, usually pandas and some quick visualization, because I want to understand distributions, missing values, and potential leakage before thinking about algorithms. I'll check how the data was collected, what each feature represents in real terms, and whether the target variable makes sense. Only after that I start thinking about feature engineering and a baseline model like logistic regression or a simple tree model, just to understand signal strength before moving into more complex approaches like neural networks or boosting methods."
+    }
+]

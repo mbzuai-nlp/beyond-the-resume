@@ -1,0 +1,306 @@
+{
+  "name": "medium-evidence-debase",
+  "description": "Debasing previously provided evidence supporting a medium level should reduce probability mass on medium.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "Quick check on handoff: when you deliver a project, do you typically include the editable source file plus any linked assets/exports so deployment can recreate it reliably?",
+      "applicant_turn": "If they only need to publish, I usually just send the final PNGs and let them take it from there. Since I'm often working in whatever tool the client prefers, I don't always have a neat source package ready to hand over.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_1": {
+      "interviewer_turn": "About your kickoff process—you said you capture objective, audience, and sizes after the first call. How often do you truly get those nailed down before you start designing?",
+      "applicant_turn": "Most clients don't really know yet at that point, so I'll usually start with an initial draft based on the deliverables and refine once they react. I don't always turn success criteria into something formal unless they specifically ask.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_2": {
+      "interviewer_turn": "When someone says the message isn't popping, do you have a go-to playbook for adjusting hierarchy—or is it different every time?",
+      "applicant_turn": "It's mostly different each time—I'll try a few options until it feels like it reads better. I don't really stick to a fixed hierarchy framework, especially when the layout is crowded.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_3": {
+      "interviewer_turn": "On adapting one layout across print/social/web: do you rebuild each version using format-specific grids and spacing rules, or do you carry the structure over as-is?",
+      "applicant_turn": "Most of the time I resize the artboard and nudge elements until it fits. I don't always reconstruct the layout per format, so spacing can end up a bit inconsistent across versions.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "composition",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_4": {
+      "interviewer_turn": "If there aren't proper brand guidelines, you said you reuse the same fonts/style. What do you do when the brand kit is incomplete or the examples are inconsistent?",
+      "applicant_turn": "When guidelines aren't clear, I usually mirror whatever looks closest based on their last few posts. The fonts and colors often vary anyway, so I follow the most recent examples instead of defining a new system.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "brand_alignment",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_5": {
+      "interviewer_turn": "Layer hygiene question: you mentioned clean naming and grouping—does that discipline hold up when you're under time pressure or collaborating?",
+      "applicant_turn": "If the deadline is tight, I don't always keep layer names perfectly tidy, and for handoff I'll often flatten to avoid problems. The file is usually intended to be used as-is rather than heavily edited.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_6": {
+      "interviewer_turn": "On revisions: you said you list changes to stay aligned. Do you also track what each revision is trying to improve and keep decision notes somewhere?",
+      "applicant_turn": "Generally I just implement the feedback items they send and get approval. I don't usually document the reasoning beyond the message thread unless it's a longer, ongoing project.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "iteration_process",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_7": {
+      "interviewer_turn": "In your marketing manager example, when the key message and usage got confirmed—were you shaping that, or was it already defined by others?",
+      "applicant_turn": "That was mostly set by product and marketing leadership, and I was executing based on their direction. If the brief wasn't fully clear, I'd typically wait for them to finalize it rather than pushing assumptions.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_8": {
+      "interviewer_turn": "You mentioned the zoom-out test for hierarchy. When there are multiple CTAs or very dense copy, how do you confirm the reading order works?",
+      "applicant_turn": "In those cases it gets tricky, and I usually just enlarge the headline and hope it carries the scan. If stakeholders want everything emphasized, the layout can end up with competing priorities.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "gd_9": {
+      "interviewer_turn": "Type system-wise: you said you use a few consistent text styles. Do you maintain a reusable scale across formats and edge cases like long strings, or is it adjusted asset-by-asset?",
+      "applicant_turn": "I usually tweak text per asset as I go, especially when copy changes late. I don't keep a formal type scale—it's more whatever fits without overflowing.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "typography",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_0": {
+      "interviewer_turn": "Going back to your early scoping—you said you clarified what people wanted and used a small set of questions. How structured were the scope and evaluation, really?",
+      "applicant_turn": "It was pretty informal—mostly a few conversations and then I moved straight into a quick prototype. The “eval set” basically became whatever questions teammates dropped in Slack when we demoed.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_1": {
+      "interviewer_turn": "On the drone wildfire dataset: you mentioned cleaning, deduping, labeling rules, and careful splits. How much of that did you personally design versus inherit from the team?",
+      "applicant_turn": "Most of the structure and labeling guidelines were already in place when I joined. I largely used the dataset as-is and only removed a small number of obviously broken files.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_2": {
+      "interviewer_turn": "For the cancer classifier, you talked about subgroup checks and multiple metrics—were those built into the official evaluation plan, or more of an extra one-off?",
+      "applicant_turn": "Officially it was basically ROC-AUC on a standard split and a single confusion matrix snapshot. The subgroup breakdowns were a one-time check I ran once and didn't keep updating as we iterated.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_3": {
+      "interviewer_turn": "With YOLO, you described it like controlled experiments led you to a consistently better setup. In practice, how systematic was the tuning and validation?",
+      "applicant_turn": "It was more like a handful of quick trial runs—no fixed seeds and I wasn't isolating one change at a time. I picked the run that looked best on validation mAP once, and we didn't rerun to confirm it held up.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "failure_analysis_and_iteration",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_4": {
+      "interviewer_turn": "About deploying the sentiment model—you mentioned interfaces, logging, and version tracking. How much of that deployment did you personally own end-to-end?",
+      "applicant_turn": "The software team handled most of the service integration and logging. I mainly handed over the model file and a rough input/output spec, and I wasn't very involved after it went live beyond checking it wasn't obviously breaking.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_5": {
+      "interviewer_turn": "You said you send recap emails with goals, requirements, metrics, and open questions. Is that kind of written record actually consistent across your projects?",
+      "applicant_turn": "Not consistently—sometimes I'll just drop a quick message in the project channel instead of writing it up. A lot of the assumptions and success criteria stayed implicit unless someone asked later.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "communication",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_6": {
+      "interviewer_turn": "For the Llama fine-tune, you referenced a targeted eval set and safety-style prompts. How robust was that evaluation setup in reality?",
+      "applicant_turn": "It was a small set I assembled quickly, and we didn't really refresh it or validate that it was representative. The “problem prompts” were just a few examples I remembered, not something systematic.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_7": {
+      "interviewer_turn": "You mentioned doing preprocessing in a train-fit way with unknown categories and saved pipelines. Was that discipline actually enforced end-to-end?",
+      "applicant_turn": "In practice, I did some preprocessing separately in notebooks to move faster, and a couple transformations were refit when I reran experiments. The saved pipeline wasn't always exactly the one used to produce the final numbers.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_8": {
+      "interviewer_turn": "On the time-series work, you mentioned MAE/MSE and checking periods—did you do time-aware evaluation like rolling windows or strict forward-chaining, or not really?",
+      "applicant_turn": "We mostly treated it like a standard split and didn't do rolling backtests or anything similar. I didn't spend much time on leakage beyond making sure train and test were different files.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "ml_9": {
+      "interviewer_turn": "For the real-time forex system, you talked about monitoring and versioning. Did you have concrete guardrails or rollback procedures that you controlled?",
+      "applicant_turn": "Monitoring was mostly basic service health, and rollback was essentially “redeploy the previous container” if something looked off. I wasn't the one setting up alerts or defining operational thresholds.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_0": {
+      "interviewer_turn": "You mentioned using an ICP and disqualifying fast—when you're slammed, what does that actually look like day-to-day?",
+      "applicant_turn": "Day-to-day I often start from inbound lists or whatever marketing sends over and work those names as they come in. I'll do a quick scan, but I don't consistently apply strict disqualification unless it's an extreme mismatch.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_1": {
+      "interviewer_turn": "About your follow-up sequence: when things get hectic, do you truly keep the cadence you described, or does it slip?",
+      "applicant_turn": "It's more a guideline than a rigid sequence, and it varies week to week. I don't always reach the later touches, and I'm not consistently tracking responses beyond whether a conversation starts.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_2": {
+      "interviewer_turn": "You said you ask discovery questions and summarize requirements—how structured is that in the moment versus more free-form conversation?",
+      "applicant_turn": "It's pretty conversational, and I don't always capture everything in a consistent format. If the meeting is short, I'll jump to options quickly and fill gaps later based on assumptions.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "discovery",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_3": {
+      "interviewer_turn": "When you tailor decks to a buyer, are you usually building that from scratch, or mostly working from standard materials someone else produced?",
+      "applicant_turn": "Most of the deck structure and proof points come from standard marketing/enablement materials, and I usually just make small edits. I don't always have the time to re-architect it around their specific evaluation criteria.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "positioning",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_4": {
+      "interviewer_turn": "You mentioned bringing in economic/technical/procurement stakeholders—how often do you really multi-thread beyond your main champion?",
+      "applicant_turn": "Most of the time I'm working through one champion and counting on them to relay updates internally. I'll ask about other stakeholders, but I don't consistently get direct access until late, if at all.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "navigation",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_5": {
+      "interviewer_turn": "When you say you track objections and agree what would resolve them—what does that record actually look like in practice?",
+      "applicant_turn": "Usually it's just notes in my own doc rather than something formal that everyone aligns on. If the objection comes up again with a different stakeholder, I'll explain it again, but it's not always tied to explicit resolution criteria.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "objections",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_6": {
+      "interviewer_turn": "You said you now surface procurement and assign owner/date next steps. Across deals, how consistently does that really happen?",
+      "applicant_turn": "It's not consistent for every deal, especially smaller ones where we're trying to keep momentum. Procurement and security still often appear only after the buyer flags them, and timelines can stay informal until late-stage.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "deal_control",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_7": {
+      "interviewer_turn": "On your weekly pipeline updates—stage, close date, risks—how strict are you with those when there hasn't been any new buyer activity?",
+      "applicant_turn": "If there's no fresh activity, I usually leave stage and close date as-is rather than re-validating them. Risk notes can lag too, and a lot of the consistency comes from manager-driven review more than my own process.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "forecasting",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_8": {
+      "interviewer_turn": "You talked about focusing Customer Success time on best-fit accounts—how formal was that profile and prioritization in reality?",
+      "applicant_turn": "The “best-fit” guidance mostly came from leadership and the book of business we were assigned, so I wasn't doing much active selection myself. Day-to-day I still had to respond to whoever escalated the loudest, even if they weren't ideal.",
+      "mode": "scope-downgrade",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "medium",
+        "direction": "down"
+      }
+    },
+    "sales_9": {
+      "interviewer_turn": "You said you block time, run a multi-channel sequence, and track outcomes—what does your tracking actually include?",
+      "applicant_turn": "It's pretty lightweight—mostly a list of who I contacted and whether they replied, not a full funnel view. The multi-touch plan breaks down when my calendar fills up, so follow-up becomes ad hoc.",
+      "mode": "rigor-downgrade",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "medium",
+        "direction": "down"
+      }
+    }
+  }
+}

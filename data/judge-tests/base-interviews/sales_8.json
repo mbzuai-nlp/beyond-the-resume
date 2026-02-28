@@ -1,0 +1,42 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Thanks for joining, Luba. I want to stay focused on your move into Verity. What specifically pulled you from medical sales into conversational AI?"
+    },
+    {
+        "role": "applicant",
+        "message": "Straight answer? I saw healthcare getting eaten alive by bad tech decisions, and Verity was one of the few platforms that actually tied automation to measurable outcomes. I wasn't looking for a reset, I was looking for leverage."
+    },
+    {
+        "role": "interviewer",
+        "message": "You were hired into Customer Success, not Sales. How did you reconcile that with your background?"
+    },
+    {
+        "role": "applicant",
+        "message": "I didn't romanticize the title. The job was revenue protection and expansion with better optics. Anyone who thinks CSM isn't sales just hasn't carried a number the hard way."
+    },
+    {
+        "role": "interviewer",
+        "message": "You mention bridging Sales and CS. Practically speaking, what did you change?"
+    },
+    {
+        "role": "applicant",
+        "message": "I killed the handoff theater. Built automated workflows in Gainsight, forced clean success criteria, and made expansion visible early. That's why my accounts expanded instead of churning."
+    },
+    {
+        "role": "interviewer",
+        "message": "Your resume says you exceeded targets as a CSM. What did that actually look like quarter to quarter?"
+    },
+    {
+        "role": "applicant",
+        "message": "It looked like identifying upsell paths before renewal panic, looping Sales in with context, and not hiding behind process. I averaged about 110 percent because I treated the role like ownership, not support."
+    },
+    {
+        "role": "interviewer",
+        "message": "Last thing on Verity. The role ended due to reorg. How did that land for you?"
+    },
+    {
+        "role": "applicant",
+        "message": "Honestly? Frustrating but clean. Performance wasn't the issue, capital was. I took the learnings, proved I could win in SaaS, and moved on without baggage."
+    }
+]

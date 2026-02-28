@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Morgan, thanks for joining today. To kick things off, can you tell me a little about yourself and your background?"
+    },
+    {
+        "role": "applicant",
+        "message": "Sure, happy to be here. I am a graphic designer with experience across print and digital work, and I really enjoy creating clean, engaging visuals. I have worked with different teams and projects, which has helped me build a solid and well-rounded skill set."
+    },
+    {
+        "role": "interviewer",
+        "message": "Nice. What would you say are your main strengths as a designer?"
+    },
+    {
+        "role": "applicant",
+        "message": "I would say my main strengths are being organized, meeting deadlines, and adapting to different project needs. I am comfortable working independently or with a team, and I try to stay flexible and open to feedback."
+    },
+    {
+        "role": "interviewer",
+        "message": "Great. Can you share what kind of role or work environment you are looking for next?"
+    },
+    {
+        "role": "applicant",
+        "message": "I am looking for a creative role where I can continue to grow my skills and contribute to a collaborative team. Ideally it would be a place that values good design, communication, and steady professional development."
+    }
+]

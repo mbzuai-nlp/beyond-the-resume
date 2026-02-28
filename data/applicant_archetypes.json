@@ -1,0 +1,170 @@
+{
+  "gd": {
+    "low_larry": {
+      "brief_interpretation": "low",
+      "visual_hierarchy": "low",
+      "typography": "low",
+      "composition": "low",
+      "brand_alignment": "low",
+      "production_readiness": "low",
+      "iteration_process": "low"
+    },
+    "average_joe": {
+      "brief_interpretation": "medium",
+      "visual_hierarchy": "medium",
+      "typography": "medium",
+      "composition": "medium",
+      "brand_alignment": "medium",
+      "production_readiness": "medium",
+      "iteration_process": "medium"
+    },
+    "high_henry": {
+      "brief_interpretation": "high",
+      "visual_hierarchy": "high",
+      "typography": "high",
+      "composition": "high",
+      "brand_alignment": "high",
+      "production_readiness": "high",
+      "iteration_process": "high"
+    },
+    "brand_system_steward": {
+      "brief_interpretation": "high",
+      "visual_hierarchy": "high",
+      "typography": "high",
+      "composition": "medium",
+      "brand_alignment": "high",
+      "production_readiness": "high",
+      "iteration_process": "medium"
+    },
+    "concept_first_art_director": {
+      "brief_interpretation": "medium",
+      "visual_hierarchy": "medium",
+      "typography": "medium",
+      "composition": "high",
+      "brand_alignment": "medium",
+      "production_readiness": "low",
+      "iteration_process": "high"
+    },
+    "crafty_layout_operator": {
+      "brief_interpretation": "medium",
+      "visual_hierarchy": "high",
+      "typography": "high",
+      "composition": "high",
+      "brand_alignment": "low",
+      "production_readiness": "high",
+      "iteration_process": "low"
+    }
+  },
+  "ml": {
+    "low_larry": {
+      "problem_framing": "low",
+      "data_judgement": "low",
+      "evaluation_design": "low",
+      "failure_analysis_and_iteration": "low",
+      "ml_system_delivery": "low",
+      "communication": "low"
+    },
+    "average_joe": {
+      "problem_framing": "medium",
+      "data_judgement": "medium",
+      "evaluation_design": "medium",
+      "failure_analysis_and_iteration": "medium",
+      "ml_system_delivery": "medium",
+      "communication": "medium"
+    },
+    "high_henry": {
+      "problem_framing": "high",
+      "data_judgement": "high",
+      "evaluation_design": "high",
+      "failure_analysis_and_iteration": "high",
+      "ml_system_delivery": "high",
+      "communication": "high"
+    },
+    "prototype_sprinter": {
+      "problem_framing": "medium",
+      "data_judgement": "low",
+      "evaluation_design": "low",
+      "failure_analysis_and_iteration": "medium",
+      "ml_system_delivery": "high",
+      "communication": "medium"
+    },
+    "research_purist": {
+      "problem_framing": "medium",
+      "data_judgement": "medium",
+      "evaluation_design": "high",
+      "failure_analysis_and_iteration": "high",
+      "ml_system_delivery": "low",
+      "communication": "low"
+    },
+    "production_hardener": {
+      "problem_framing": "high",
+      "data_judgement": "high",
+      "evaluation_design": "medium",
+      "failure_analysis_and_iteration": "low",
+      "ml_system_delivery": "high",
+      "communication": "low"
+    }
+  },
+  "sales": {
+    "low_larry": {
+      "market_focus": "low",
+      "outreach": "low",
+      "discovery": "low",
+      "positioning": "low",
+      "navigation": "low",
+      "objections": "low",
+      "deal_control": "low",
+      "forecasting": "low"
+    },
+    "average_joe": {
+      "market_focus": "medium",
+      "outreach": "medium",
+      "discovery": "medium",
+      "positioning": "medium",
+      "navigation": "medium",
+      "objections": "medium",
+      "deal_control": "medium",
+      "forecasting": "medium"
+    },
+    "high_henry": {
+      "market_focus": "high",
+      "outreach": "high",
+      "discovery": "high",
+      "positioning": "high",
+      "navigation": "high",
+      "objections": "high",
+      "deal_control": "high",
+      "forecasting": "high"
+    },
+    "spray_and_pray_hustler": {
+      "market_focus": "low",
+      "outreach": "high",
+      "discovery": "low",
+      "positioning": "low",
+      "navigation": "low",
+      "objections": "low",
+      "deal_control": "medium",
+      "forecasting": "low"
+    },
+    "methodical_qualifier": {
+      "market_focus": "high",
+      "outreach": "medium",
+      "discovery": "high",
+      "positioning": "medium",
+      "navigation": "medium",
+      "objections": "medium",
+      "deal_control": "high",
+      "forecasting": "high"
+    },
+    "solution_consultant": {
+      "market_focus": "medium",
+      "outreach": "low",
+      "discovery": "high",
+      "positioning": "high",
+      "navigation": "medium",
+      "objections": "high",
+      "deal_control": "medium",
+      "forecasting": "medium"
+    }
+  }
+}

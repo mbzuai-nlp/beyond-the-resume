@@ -1,0 +1,42 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Alright, Marco, I'll be honest, your resume is packed and that sometimes makes me wonder what's real day-to-day experience versus buzzwords. Can you walk me through what you actually did at PixelHarbor Studio?"
+    },
+    {
+        "role": "applicant",
+        "message": "Totally fair question. At PixelHarbor I was hands-on the whole time, mainly building base renders and then iterating on them step by step. I'd start with a solid asset, then create progressive versions where each change stacked on the previous one, so by the final render everything was cohesive and polished. It taught me discipline and consistency, which I actually enjoyed a lot."
+    },
+    {
+        "role": "interviewer",
+        "message": "Hmm. You list a lot of tools here, Maya, Blender, Unreal, even Houdini. Are you genuinely comfortable switching between all of those, or is that more surface-level familiarity?"
+    },
+    {
+        "role": "applicant",
+        "message": "I'm comfortable switching, yeah. I won't pretend I'm a wizard at every single one, but I know when and why to use each tool. For example, Blender and Maya are my daily drivers for modeling, ZBrush for sculpting details, and Unreal or Unity when assets need to live in-engine. I'm optimistic about learning curves, so if a project needs a specific tool, I adapt fast."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've freelanced quite a bit. Freelancers sometimes struggle with structure and feedback. How did you handle clients who changed their minds or pushed deadlines?"
+    },
+    {
+        "role": "applicant",
+        "message": "That happened a lot, honestly. I handled it by over-communicating and defending my decisions clearly but calmly. I'd explain the impact of changes on time or quality, propose alternatives, and keep things transparent. Most clients appreciated that, and it kept projects moving without drama."
+    },
+    {
+        "role": "interviewer",
+        "message": "I see you also worked as a QA tester on a PlayStation title. That's a bit of a jump from 3D art. Why does that matter for this role?"
+    },
+    {
+        "role": "applicant",
+        "message": "For me it connects really well. QA trained my eye for detail and consistency, and it made me think like a developer and a player at the same time. When I build assets now, I'm already thinking about performance, edge cases, and how things might break in-engine, which I think adds real value."
+    },
+    {
+        "role": "interviewer",
+        "message": "Alright, last thing for now. You describe yourself as enthusiastic and imaginative, but production environments can be repetitive and strict. How do you stay motivated?"
+    },
+    {
+        "role": "applicant",
+        "message": "I actually like structure more than people expect. Repetition doesn't kill my motivation, it sharpens it. I get excited about small improvements, cleaner topology, better lighting, smoother workflows. That optimism keeps me focused, and when there's room for creativity, I'm ready to push it."
+    }
+]

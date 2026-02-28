@@ -1,0 +1,18 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Tell me about what you do now."
+    },
+    {
+        "role": "applicant",
+        "message": "Oh yeah, so I work on like big web stuff at my company, making sure everything runs smooth and doesn't break when lots of people use it. I also mess around with smart computer programs that learn from data to make the app better for users. It's pretty fun honestly."
+    },
+    {
+        "role": "interviewer",
+        "message": "Biggest thing you improved there?"
+    },
+    {
+        "role": "applicant",
+        "message": "We changed how the whole thing was set up so it didn't crash when traffic got crazy, and I helped tweak how we use the cloud so the company saved a bunch of money. People were pretty happy about that part."
+    }
+]

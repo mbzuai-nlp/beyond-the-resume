@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hi Amina! It's really nice to meet you. I had a chance to glance through your resume and I love seeing your mix of software engineering, RPA, and machine learning interests. To start us off, could you tell me a bit about yourself and what got you interested in this path?"
+    },
+    {
+        "role": "applicant",
+        "message": "Hi… thank you, it's really nice to meet you too. Umm, so I'm currently in my final year studying software engineering, and I think over time I just started getting more curious about how things can be automated, especially repetitive tasks. At first I was mostly focused on Python and basic programming, but then I discovered UiPath and machine learning courses online, and it kind of opened my eyes to how software can actually *do* things by itself, if that makes sense. I wouldn't say I'm an expert yet, but I've been trying to build small projects and follow tutorials to really understand how AI and automation can be applied in practical ways."
+    },
+    {
+        "role": "interviewer",
+        "message": "That's a wonderful way to explore your interests, honestly. I can tell you've been very proactive with self-learning. I noticed you mentioned a spam detection model and some ML tutorials you followed. Can you walk me through what you did there and what you learned from that experience?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yes, sure… so the spam detection model was something I built after following Google's ML Crash Course and some scikit-learn tutorials. I started with understanding how text data can be converted into numbers using things like vectorization, which was a bit confusing at first. Then I used scikit-learn to train a simple model to classify messages as spam or not. It wasn't very advanced, but I learned a lot about preprocessing text, cleaning data, and evaluating the model's accuracy. I also tried to deploy it with Flask after watching some videos, which honestly took me some time to figure out, but it helped me understand how ML models can actually be used in applications."
+    },
+    {
+        "role": "interviewer",
+        "message": "That's fantastic progress for someone still in university. I also saw your project about the File Organizer Bot and the Bulk Data Migration Bot with UiPath. What was the most challenging part of working on those automation projects?"
+    },
+    {
+        "role": "applicant",
+        "message": "I think the hardest part was not really the coding itself, but understanding how to design the workflow properly before implementing it. With the File Organizer Bot, it seemed simple at first, but I had to think about edge cases, like different file types and unexpected folder structures. For the data migration bot, it was more challenging because I had to work with SQL Server and make sure the data was transferred correctly without breaking anything. I sometimes felt unsure if I was doing it the best way, so I kept revising the workflow and testing it many times. It taught me to be more patient and careful when automating processes."
+    }
+]

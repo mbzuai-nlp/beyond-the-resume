@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hi Avery, it's great to meet you! I was really intrigued by your research work at Redwood State, especially the part about protecting models from data exploitation. Could you tell me a bit about what drew you into that problem space?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah, absolutely. I think I just kept noticing that a lot of work focused on making models better, faster, more accurate, but not necessarily safer. I kind of fell into a few papers around model inversion and data leakage, and it felt like an area where small ideas could have meaningful impact. So I explored it further and it turned into a pretty serious research direction."
+    },
+    {
+        "role": "interviewer",
+        "message": "That's a really thoughtful way to approach it. I also saw you implemented a defense method with diffusion autoencoders in PyTorch. What was the most challenging part of turning that idea into something that actually worked on large datasets?"
+    },
+    {
+        "role": "applicant",
+        "message": "Honestly, getting it to scale without breaking the assumptions behind the method. On paper it sounded straightforward, but once you start pushing 100k-plus samples through it, edge cases show up. A lot of time went into figuring out where the model was quietly failing rather than loudly failing."
+    },
+    {
+        "role": "interviewer",
+        "message": "That makes sense. Switching gears a bit, your experience at BluePeak shows strong data engineering alongside ML. How did working on large ETL pipelines influence the way you approach ML system design today?"
+    },
+    {
+        "role": "applicant",
+        "message": "I think it made me more cautious, in a good way. You start realizing models are only as good as the pipelines feeding them. So now I tend to think about data flow, monitoring, and failure modes almost before I think about model architecture."
+    },
+    {
+        "role": "interviewer",
+        "message": "I really like that perspective. One more thing I'm curious about—your sentiment model at RetailPulse had a pretty tangible business impact. How did you balance model experimentation with the need to ship something reliable in production?"
+    },
+    {
+        "role": "applicant",
+        "message": "We tried not to over-optimize for cleverness. There were a few fancier approaches we tested, but the BERT-based pipeline was the one we understood well enough to trust in production. It wasn't necessarily the most novel, just the most dependable under constraints."
+    }
+]

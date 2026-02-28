@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Walk me through what you're doing right now at CivicRelay."
+    },
+    {
+        "role": "applicant",
+        "message": "Sure. I'm working part-time as a software engineer focused on AI systems. I designed and now maintain an agentic RAG platform end to end. That includes the retrieval infrastructure, orchestration layer, and the frontend that streams responses. The goal was to help volunteers get information faster, and we saw noticeable improvements in both productivity and onboarding time after deployment."
+    },
+    {
+        "role": "interviewer",
+        "message": "Agentic RAG is vague. What did you actually build?"
+    },
+    {
+        "role": "applicant",
+        "message": "Right, so concretely I built the data pipelines for indexing multimodal content, then an orchestration layer in FastAPI that routes user queries to different agents based on intent and context. I also worked on optimizing latency by refining how retrieval and generation steps happen in sequence. On the frontend, I implemented real-time streaming so users can see partial responses while the system reasons."
+    },
+    {
+        "role": "interviewer",
+        "message": "Why did latency matter that much?"
+    },
+    {
+        "role": "applicant",
+        "message": "Because users were interacting with it conversationally. If responses took too long, they'd abandon the flow. We were seeing p95 spikes as usage grew, so I profiled the routing logic and retrieval calls and adjusted how agents were selected and how much context they were given. That brought latency down and also reduced unnecessary compute cost."
+    },
+    {
+        "role": "interviewer",
+        "message": "You also did research. How is that relevant here?"
+    },
+    {
+        "role": "applicant",
+        "message": "During my graduate research I worked on dynamically adjusting transformer architectures during training. That experience made me comfortable with profiling model behavior and thinking about efficiency, not just accuracy. I think that mindset translated well when optimizing real-world LLM systems where performance and cost matter as much as model quality."
+    }
+]

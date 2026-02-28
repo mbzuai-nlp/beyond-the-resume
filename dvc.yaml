@@ -1,0 +1,78 @@
+vars:
+- data-root: data
+- pins-root: .dvc/pins
+- log-fn: exec.log
+
+
+stages:
+  # === Judge Evaluation ===
+  run-judge-tests:
+    matrix:
+      judge:
+      - name: independent
+        extra-args: ''
+      - name: previous-judgement-aware
+        extra-args: ''
+      test:
+      # no change
+      - irrelevance
+      - aggrandising
+      - repetition
+      # evidence injection
+      - low-evidence
+      - medium-evidence
+      - high-evidence
+      # evidence debasement
+      - low-evidence-debase
+      - medium-evidence-debase
+      - high-evidence-debase
+      # property-based
+      - uniform-prior
+
+    vars:
+    - stage-name: run-judge-tests
+    cmd: >
+      bash -lc "set -euo pipefail;
+      mkdir -p ${data-root}/${stage-name}/${item.judge.name}/${item.test};
+      uv run python -m pipelines.run_judge_tests
+      --test-name=${item.test}
+      --judge-name=${item.judge.name}
+      --exp-dir=${data-root}/${stage-name}/${item.judge.name}/${item.test}/exp
+      --save-path=${data-root}/${stage-name}/${item.judge.name}/${item.test}/out.parquet
+      --data-dir=${data-root}
+      ${item.judge.extra-args}
+      2>&1 | tee ${data-root}/${stage-name}/${item.judge.name}/${item.test}/${log-fn}"
+    deps:
+    - ${pins-root}/${stage-name}/${item.judge.name}/${item.test}.pin
+    - ${data-root}/resumes
+    - ${data-root}/rubrics
+    - ${data-root}/judge-tests/base-interviews
+    - ${data-root}/judge-tests/${item.test}.json
+    outs:
+    - ${data-root}/${stage-name}/${item.judge.name}/${item.test}/${log-fn}
+    - ${data-root}/${stage-name}/${item.judge.name}/${item.test}/out.parquet
+
+  # === Interviewer Evaluation ===
+
+  run-interview-simulation:
+    foreach:
+    - judgement-unaware
+    do:
+      vars:
+      - stage-name: run-interview-simulation
+      cmd: >
+        bash -lc "set -euo pipefail;
+        mkdir -p ${data-root}/${stage-name}/${item};
+        uv run python -m pipelines.simulate_interviews
+        --interviewer-name=${item}
+        --judge-name=previous-judgement-aware
+        --exp-dir=${data-root}/${stage-name}/${item}/exp
+        --save-path=${data-root}/${stage-name}/${item}/out.parquet
+        --data-dir=${data-root}
+        2>&1 | tee ${data-root}/${stage-name}/${item}/${log-fn}"
+      deps:
+      - ${pins-root}/${stage-name}/${item}.pin
+      - ${data-root}/rubrics
+      outs:
+      - ${data-root}/${stage-name}/${item}/${log-fn}
+      - ${data-root}/${stage-name}/${item}/out.parquet

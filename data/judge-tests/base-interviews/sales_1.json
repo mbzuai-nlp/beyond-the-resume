@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Avery, so I was looking at your resume and I kinda bounced from tennis to economics to car stuff, can you walk me through how all that fits together, or maybe start with whatever you think is most impressive?"
+    },
+    {
+        "role": "applicant",
+        "message": "Absolutely, and honestly it all connects through leadership and performance, which are basically my trademarks. Whether I'm running a high-revenue business, captaining varsity teams, or leading investment strategy discussions, I consistently operate at a level way above my peers."
+    },
+    {
+        "role": "interviewer",
+        "message": "Right, right, makes sense, oh actually before we forget, you're still in Grade 12 but you're already a head coach and a co-founder, how did that even happen, like timeline-wise?"
+    },
+    {
+        "role": "applicant",
+        "message": "I move fast and I scale fast. The coaching came from being one of the strongest competitive players in my age group, so facilities trusted me early, and the business came from me spotting an obvious market gap and executing better than anyone else in the area."
+    },
+    {
+        "role": "interviewer",
+        "message": "Got it, and then jumping somewhere else, you mention Investment Club president but only for a short window, was that like a temporary thing or did something change there?"
+    },
+    {
+        "role": "applicant",
+        "message": "It was short because I'm hyper-efficient. I took a stagnant club, rebuilt the structure, doubled engagement, and set systems that basically run themselves now, so my impact was immediate and lasting."
+    },
+    {
+        "role": "interviewer",
+        "message": "Okay yeah, and last thing I'm randomly curious about, you list Arabic and French along with all the sports and business stuff, do you actually use those or is it more academic?"
+    },
+    {
+        "role": "applicant",
+        "message": "I actively use Arabic in real professional settings and it gives me a huge edge with clients and community outreach, and French is something I'm sharpening fast because I tend to master things once I commit."
+    }
+]

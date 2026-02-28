@@ -1,0 +1,6 @@
+[ui]
+default_sidebar_state = "open"
+default_theme = "light"
+
+[UI]
+custom_css = "/public/custom.css"

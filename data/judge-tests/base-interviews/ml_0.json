@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Alex, glad you could make it. I skimmed your resume—looks like you've bounced between robotics, ML, and testing roles. Can you give me a quick rundown of what you actually do day to day right now at Ridgeway Robotics?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah, mostly data stuff. Pipelines, sensor data, making sure it gets where it needs to go. Some analysis too."
+    },
+    {
+        "role": "interviewer",
+        "message": "Got it. You mention owning end-to-end pipelines for production tests. What does “owning” that look like in practice? Are you coding, designing infra, coordinating teams?"
+    },
+    {
+        "role": "applicant",
+        "message": "A bit of all that. I set things up and keep them running. Write scripts, fix issues when they pop up."
+    },
+    {
+        "role": "interviewer",
+        "message": "Cool. I also saw the YOLOv8 project with 98% mAP. That's pretty high. What kind of objects were you detecting, and how did you measure that metric?"
+    },
+    {
+        "role": "applicant",
+        "message": "It was like UI elements from an aim trainer game. I just used the standard eval setup from YOLO, split the dataset, trained, and checked the numbers."
+    }
+]

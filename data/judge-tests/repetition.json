@@ -1,0 +1,128 @@
+{
+  "name": "repetition",
+  "description": "Rewords/paraphrases/repeats previously provided information and thus, should not move posteriors.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "Can you quickly give me a run-down of your recent experience - super brief.",
+      "applicant_turn": "So I was a senior graphic designer in my last role and had several responsibilities including designing marketing collateral, centralising brand elements for consistency, as well as various different rebranding projects."
+    },
+    "gd_1": {
+      "interviewer_turn": "What previous positions have you held that are relevant to this job?",
+      "applicant_turn": "I've worked as a graphic designer for a couple of years now including in a freelancer capacity, teaching me how to be independent."
+    },
+    "gd_2": {
+      "interviewer_turn": "Social media is key nowadays. How do you handle design for social media?",
+      "applicant_turn": "I like to tailor assets based on how they will be seen (i.e. who, where and how?) and play with motion."
+    },
+    "gd_3": {
+      "interviewer_turn": "Can you briefly summarize your background and experience?",
+      "applicant_turn": "I have a B.S. in Visual Communication Design and experience as a virtual retail specialist and apprentice graphic designer, focusing on customer support, design assistance, branding, and print deliverables."
+    },
+    "gd_4": {
+      "interviewer_turn": "What kinds of design work have you done in your recent roles?",
+      "applicant_turn": "I've worked as a freelance and in-house graphic designer creating branding, presentations, reports, social media graphics, marketing campaigns, packaging, and print materials, while managing multiple projects and collaborating with remote and cross-functional teams."
+    },
+    "gd_5": {
+      "interviewer_turn": "What did you do as a Junior 3D Artist at Wirestock?",
+      "applicant_turn": "I created a base 3D render, produced sequential renders with incremental visual changes, preserved previous edits at each stage, and combined all modifications into a final polished render."
+    },
+    "gd_6": {
+      "interviewer_turn": "What have you worked on in your last roles?",
+      "applicant_turn": "My current employer is in the medical industry and so I've helped out across social media, web-design and physical print-out materials."
+    },
+    "gd_7": {
+      "interviewer_turn": "What sort of design experience do you have?",
+      "applicant_turn": "I have design experience that includes both print, digital, social media and other assets for B2B as well as for myself as an influencer."
+    },
+    "gd_8": {
+      "interviewer_turn": "What was a big achievement in your last position?",
+      "applicant_turn": "By focusing on centralising and standardising our messaging and communications, I grew student engagement by 50%."
+    },
+    "gd_9": {
+      "interviewer_turn": "Would you say your experience is mainly within the same vertical or quite spread?",
+      "applicant_turn": "I have diverse experience across domains involving many aspects of graphic design like marketing and social media."
+    },
+
+    "ml_0": {
+      "interviewer_turn": "Describe your most successful project",
+      "applicant_turn": "I have two actually. The first was a p project using YOLO that scored an incredibly high mAP and the second was achieving an order of magnitude increase in automatic image annotation."
+    },
+    "ml_1": {
+      "interviewer_turn": "Describe a time where you were responsible for data collection.",
+      "applicant_turn": "One time I used a drone to collect data of a forest for downstream purposes such as wildfire prediction."
+    },
+    "ml_2": {
+      "interviewer_turn": "Describe an experience where you used Python?",
+      "applicant_turn": "Using software design principles and IO I created a quiz program."
+    },
+    "ml_3": {
+      "interviewer_turn": "That chatbot seems interesting. So it had much of an impact?",
+      "applicant_turn": "Yes it reduced SME workload by nearly an order of magnitude by automatically producing key dashboards."
+    },
+    "ml_4": {
+      "interviewer_turn": "Your BERT based sentiment detector. Talk me through that?",
+      "applicant_turn": "Basically, we were able to predict rude retailers with 93% accuracy to massivley reduce complains and boosting revenue.."
+    },
+    "ml_5": {
+      "interviewer_turn": "Looking back at your previous work experience, what really stands out?",
+      "applicant_turn": "I feel like my biggest impact was as a grad researcher where we looked at dynamic model architecture. As part of that role I also got lots of experience working in an HPC environment and training large models."
+    },
+    "ml_6": {
+      "interviewer_turn": "What's a time where you dealt with a massive dataset?",
+      "applicant_turn": "Would have been the mobile network optimisation project where there were tens of millions of data points and we aimed to identify network bottlenecks."
+    },
+    "ml_7": {
+      "interviewer_turn": "Tell me about a time when your work moved a needle the most - what do you hang your hat on?",
+      "applicant_turn": "100% my RA gig where we reduced execution time 8-fold using deep learning for feature selection."
+    },
+    "ml_8": {
+      "interviewer_turn": "Outside of work, what are you most proud of?",
+      "applicant_turn": "Definitely my uni scholarship. I know it's still related to my degree but that took some real effort outside of usual studying."
+    },
+    "ml_9": {
+      "interviewer_turn": "What was the hardest project you have worked on would you say?",
+      "applicant_turn": "Probably my forex trader because time-series forecasting (especially with highly stochastic signal like price data) is naturally difficult."
+    },
+
+    "sales_0": {
+      "interviewer_turn": "Can you walk me through a time where you had to take an existing system and improve it?",
+      "applicant_turn": "Sure, in my current role I took an old Salesforce procedure and improved it, slashing data entry cost and optimising based on feedback."
+    },
+    "sales_1": {
+      "interviewer_turn": "I'd like to know what you get up to outside of work.",
+      "applicant_turn": "I love playing tennis and am a head coach. I also love investiment and run the investment club that has nearly 70 members."
+    },
+    "sales_2": {
+      "interviewer_turn": "What skills did you develop as a property manager?",
+      "applicant_turn": "I was mainly charged with ensuring high occupancy rate through excellent administration, communication and customer service."
+    },
+    "sales_3": {
+      "interviewer_turn": "Do you have any educational experience that you believe is relevant to sales?",
+      "applicant_turn": "Yes, I learned a lot through my business degree which also focused on marketing that is relevant to sales in my opinion."
+    },
+    "sales_4": {
+      "interviewer_turn": "Give me an example of where you had to work in a corss functional team?",
+      "applicant_turn": "Sure, there have been many times where the business needed to align on geographic strategy with external affairs, legal, marketing and sales."
+    },
+    "sales_5": {
+      "interviewer_turn": "Do you only have experience working in large companies?",
+      "applicant_turn": "No I was actually a sales manager of a startup many years ago - boosting sales by 30%. I also had to maintain financial records etc."
+    },
+    "sales_6": {
+      "interviewer_turn": "Are you able to demonstrate that your sales techniques actually drive commercial impact?",
+      "applicant_turn": "Definitely, I have recurring evidence of growing revenue. At my last company I even surpassed the FinOps forecast!"
+    },
+    "sales_7": {
+      "interviewer_turn": "How do you sell?",
+      "applicant_turn": "By  having great product knowledge, collaborating with team members and persuasive techniques."
+    },
+    "sales_8": {
+      "interviewer_turn": "Do you prefer managing low or high value accounts? Do you have experience with both?",
+      "applicant_turn": "I believe I can drive larger impact when managing high value accounts. For example, working in tech I was able to find new sales opportunities with existing accounts and consistently surpassed targets."
+    },
+    "sales_9": {
+      "interviewer_turn": "Talk me through your experience as a team lead.",
+      "applicant_turn": "I won several awards, achieved beyond annual quota across many complex sales cycles and optimised lead routing across 20 reps."
+    }
+  }
+}

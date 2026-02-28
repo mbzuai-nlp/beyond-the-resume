@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Give me a quick overview of your background."
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah, sure, I mean it's kind of a mix really, I've been around design for a while and sort of grown into different roles depending on what was needed, so it's been fairly hands-on across a few areas."
+    },
+    {
+        "role": "interviewer",
+        "message": "Why did you leave Bright Oak Creative?"
+    },
+    {
+        "role": "applicant",
+        "message": "I wouldn't say it was one specific thing, it was more about timing and where the agency was heading versus what I felt I should be focusing on, so it made sense to step back and reassess things."
+    },
+    {
+        "role": "interviewer",
+        "message": "What are you doing as a freelancer right now?"
+    },
+    {
+        "role": "applicant",
+        "message": "At the moment it's mainly ongoing bits, like supporting a client's brand visuals and then some personal illustration work, nothing too rigid, just keeping projects moving while I figure out the next long-term step."
+    }
+]

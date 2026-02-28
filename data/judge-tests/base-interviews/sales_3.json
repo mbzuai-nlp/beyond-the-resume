@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Thanks for joining today. To get us started, could you walk me through your background and how it led you into marketing and sales?"
+    },
+    {
+        "role": "applicant",
+        "message": "Of course. I started in a more traditional sales role at Rivermark ReadyMix, where I handled client management and CRM alongside cross-functional teams. That grounded me in relationship-building and negotiation. While finishing my degree, I transitioned into retail planning and now into a more end-to-end marketing and sales role with Luna & Co., where I manage everything from merchandise planning to product promotion and sourcing."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've worked across sales, inventory accuracy, and now online retail. How do those experiences come together in your current role?"
+    },
+    {
+        "role": "applicant",
+        "message": "They complement each other well. My inventory and planning experience helps me make data-backed decisions, while my sales background ensures those decisions stay customer-focused. In my current role, I balance demand planning, supplier coordination, and promotional strategy with quality control, so nothing operates in isolation."
+    },
+    {
+        "role": "interviewer",
+        "message": "Tell me about a recent win or result you're particularly proud of in your current position."
+    },
+    {
+        "role": "applicant",
+        "message": "Recently, I streamlined our product sourcing and QC process, which reduced fulfillment issues and improved customer feedback. At the same time, I supported targeted promotions that helped move slower inventory without heavy discounting. It was a good example of aligning operations with marketing goals."
+    }
+]

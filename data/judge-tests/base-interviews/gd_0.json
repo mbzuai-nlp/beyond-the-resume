@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hi Michael, thanks so much for taking the time today. I've had a chance to skim your resume and I'd love to start by hearing, in your own words, a bit about your background and what brings you here."
+    },
+    {
+        "role": "applicant",
+        "message": "Yeah, sure, thanks for having me. So I've been doing graphic design for a long time, mostly in-house, and I've worked on a lot of different things like print and some digital stuff. I'm kind of at a point where I'm looking for something new and figured this role might be a good fit, or at least a good next step."
+    },
+    {
+        "role": "interviewer",
+        "message": "That makes sense, and I really appreciate you sharing that. You've clearly been in an in-house environment for quite a while. What kinds of projects do you usually feel most comfortable working on day to day?"
+    },
+    {
+        "role": "applicant",
+        "message": "I'd say I'm most comfortable with print layouts, like flyers or catalogs, and just kind of making sure things look clean and correct. I can do digital too, though sometimes I need a bit of time to remember best practices since it changes a lot. I usually do better when expectations are clear."
+    },
+    {
+        "role": "interviewer",
+        "message": "That's totally fair, and honestly pretty relatable. When you're working with others, maybe marketing or sales partners, how do you usually like to communicate and get feedback?"
+    },
+    {
+        "role": "applicant",
+        "message": "I prefer straightforward feedback, like being told what needs fixing rather than guessing. I try to be easy to work with and responsive, even if I don't always have a big creative opinion right away. I usually wait to see what direction people want before pushing ideas."
+    },
+    {
+        "role": "interviewer",
+        "message": "I really appreciate that self-awareness. One last thing I'm curious about for now is tools. You've listed quite a few. Are there any you feel especially confident in, or ones you're still growing into?"
+    },
+    {
+        "role": "applicant",
+        "message": "I'm definitely most confident in Illustrator and InDesign since I've used those forever. Figma I've used, but I wouldn't say I'm advanced with it yet. I can get by and follow existing files, but I sometimes need to look things up or ask questions."
+    }
+]

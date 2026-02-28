@@ -1,0 +1,276 @@
+{
+  "name": "high-evidence",
+  "description": "Adding high evidence to a specific dimension should move probability mass towards the high level.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "Talk me through your workflow for organizing design files and handing them off to the team that ships them.",
+      "applicant_turn": "I maintain a single source-of-truth file in our shared drive with clear version tags. For handoff, I deliver a tidy folder that includes linked assets, fonts plus licensing notes, and exports per platform. I keep layers/components consistently named and grouped, and I add export presets along with a short handoff note covering sizes, safe areas/bleed, color profile, and accessibility checks.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_1": {
+      "interviewer_turn": "As a freelancer, what did your end-to-end process look like—from first conversation to final delivery?",
+      "applicant_turn": "Right after the call, I send a one-page intent recap: objective, audience, placements, constraints, and a clear definition of “success,” plus 3–5 targeted clarifying questions. I also propose evaluation criteria (hierarchy, brand fit, accessibility, and format constraints), then share 2–3 concept directions and explicitly call out the tradeoffs against those criteria before we refine.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_2": {
+      "interviewer_turn": "What feedback do you hear most often about your work?",
+      "applicant_turn": "Most commonly, people say it's quick to scan—the primary message hits fast and the CTA stands out. I'll get comments like “I knew where to look first,” which comes from setting a clear focal point and enforcing a consistent type scale, spacing rules, and alignment across variants.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_3": {
+      "interviewer_turn": "In the past, when you have had to design for print, social, and web at the same time, how did you build those three while accounting for the different constraints?",
+      "applicant_turn": "I start with one underlying layout system—shared components and spacing rules—then adjust per medium: print gets bleed/safe margins and CMYK checks; social gets platform-safe zones and stronger thumb-stop contrast; web gets responsive breakpoints. The core composition logic stays consistent (grid, rhythm, scale relationships) so the set still feels like one family.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_4": {
+      "interviewer_turn": "How do you keep client work on-brand, and what inputs do you request to make that possible?",
+      "applicant_turn": "I ask for brand guidelines, logo files, palette and type specs, tone attributes, and examples of what they consider “on-brand” versus “off-brand.” If what they have is incomplete, I propose sensible extensions (type scale, spacing, component treatments) and document them so future assets can be reproduced consistently.",
+      "belief_update": {
+        "dimension": "brand_alignment",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_5": {
+      "interviewer_turn": "What's your preferred layer organization approach when you're building files other people will touch?",
+      "applicant_turn": "I use a repeatable structure: Frames/Artboards at the top, then Sections grouped by component (Header, Body, CTA), with consistent naming and variants. Anything reused becomes a component with tokens/styles. I lock non-editable assets, and I keep exports tied to presets so others can update safely without breaking the file.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_6": {
+      "interviewer_turn": "When a customer gives you feedback, what's your method for responding and iterating?",
+      "applicant_turn": "I translate the feedback into a testable hypothesis tied to criteria—for example, “CTA not clear” becomes “improve comprehension in 3 seconds.” Then I make targeted changes while holding other variables steady, show 2–3 controlled variants, explain tradeoffs, and document the decision and rules so the fix applies across the entire asset set.",
+      "belief_update": {
+        "dimension": "iteration_process",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_7": {
+      "interviewer_turn": "From your time as a marketing manager, can you give a concrete example of how you ran a project end-to-end?",
+      "applicant_turn": "I began with a written brief covering target segment, offer, channel placements, constraints, and success metrics (CTR and qualified leads). I aligned stakeholders on decision criteria (message clarity, brand fit, accessibility, and format requirements), ran a small concept review, and then produced the final system of assets.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_8": {
+      "interviewer_turn": "How do you make sure a layout has a strong focal point and an obvious reading order?",
+      "applicant_turn": "I start by defining the intended path—what someone should understand or do first—and then build hierarchy using a consistent type scale, contrast, and proximity rules. I validate with quick blur/squint checks and small-format previews to confirm the focal point holds up in real placements and content density.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "gd_9": {
+      "interviewer_turn": "When you're picking typography for a graphic, how do you decide on the text styles?",
+      "applicant_turn": "I define a reusable type system: roles (H1/H2/body/caption), a scale, line-length targets, and spacing rules, aligned with brand tone and accessibility. I also set fallbacks for long strings and small sizes so it stays readable across formats and localization.",
+      "belief_update": {
+        "dimension": "typography",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_0": {
+      "interviewer_turn": "Tell me about the RAG project you built—specifically how you scoped it and defined success.",
+      "applicant_turn": "I started by writing down the decision we were trying to improve (reduce time-to-answer and wrong answers in support) and then defined success and guardrails (answer accuracy on key intents, citation coverage, latency, and unsafe-content rate). I captured constraints (cost, privacy, retention) and enumerated failure modes (stale docs, conflicting sources, prompt injection), along with tests that would force us to change the plan.",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_1": {
+      "interviewer_turn": "On the forest-fire detection work: once you pulled images off the drone, what preprocessing and dataset work did you do before training?",
+      "applicant_turn": "I treated it as time- and space-correlated data, so I split by flight and location to avoid leakage. I created labeling guidelines, ran inter-annotator checks, and audited class balance and edge cases (smoke haze, sun glare, low light). I also tracked sensor and altitude metadata because those shifts show up in deployment.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_2": {
+      "interviewer_turn": "Pick one internship ML project and walk me through it—what did you measure, and why?",
+      "applicant_turn": "Because misses were expensive, I optimized for sensitivity at a fixed false-positive rate and reported AUROC/AUPRC, plus calibration and slice metrics by scanner type and site. I used patient-level splits to prevent leakage and reported uncertainty across seeds so we could set an evidence-based go/no-go threshold.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_3": {
+      "interviewer_turn": "When you fine-tuned YOLO, how did you decide which hyperparameters were best?",
+      "applicant_turn": "I used a structured search anchored on a strong baseline—changing one lever at a time—and tracked experiments with configs plus reproducible data/version hashes. I relied on targeted error slices (small objects, motion blur, occlusion) to choose what to adjust next. Every change was tied to a hypothesis and had to hold across seeds and key slices before I accepted it.",
+      "belief_update": {
+        "dimension": "failure_analysis_and_iteration",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_4": {
+      "interviewer_turn": "How did you take your sentiment model from notebook to production?",
+      "applicant_turn": "We deployed it behind a versioned API with a defined schema, pinned feature transforms, and a rollback switch. I added monitoring for drift and key failure modes, set latency and cost budgets, and built a safe fallback path. The model artifact, data version, and evaluation report were all traceable for reproducibility.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_5": {
+      "interviewer_turn": "You've just walked out of a stakeholder meeting—what's the very next message you send?",
+      "applicant_turn": "I send a concise recap: the goal, agreed success metrics and guardrails, key assumptions, and the decision we'll make at the next checkpoint. I list open questions with owners and dates, and I propose the next experiment along with what outcome would change the plan.",
+      "belief_update": {
+        "dimension": "communication",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_6": {
+      "interviewer_turn": "When you fine-tuned Llama, which metrics did you focus on and how did you choose them?",
+      "applicant_turn": "I began by defining the task in decision terms—what good output enables—and then set offline metrics that map to it: task success rate, harmful-content rate, latency/cost, and calibration-style checks for confidence. I also pre-registered acceptance thresholds and slices (long prompts, adversarial instructions, rare intents) because those are where real failures show up.",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_7": {
+      "interviewer_turn": "How did you handle missing values in validation and test—what was your approach to interpolation without leakage?",
+      "applicant_turn": "I avoided peeking into validation/test distributions by building the entire preprocessing pipeline on the training set only, and I added explicit missingness indicators. I checked the missing-data mechanism by cohort and time, looked for leakage paths, and stress-tested robustness under higher missingness since that was expected in production.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_8": {
+      "interviewer_turn": "Have you worked on time-series prediction? If yes, how did you evaluate it in a way that matches deployment?",
+      "applicant_turn": "Yes—my evaluation mirrored deployment: forward-chaining splits with a strict time cutoff and a realistic forecast horizon. I reported MSE plus business-relevant metrics, tracked slice performance during regime shifts, and used confidence intervals and backtests so we could define guardrails before rollout.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "ml_9": {
+      "interviewer_turn": "On the forex predictor: did you end up modifying the real-time system, and if so, how did you do it safely?",
+      "applicant_turn": "Yes, with safety constraints: we versioned the model and features, ran shadow mode and canary releases, and monitored drift plus PnL drawdown guardrails. Any change had to pass a rollback-ready checklist (latency, stability, slice performance) so we could iterate without disrupting the live system.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_0": {
+      "interviewer_turn": "How do you go about selecting and prioritizing target accounts?",
+      "applicant_turn": "I start with a clearly defined ICP from a playbook I desgined, then rank accounts by fit and likelihood: an obvious use case, a trigger, a budget path, and evidence of buying motion. I disqualify early when key signals are missing and document the reason so the team learns and targeting improves over time.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_1": {
+      "interviewer_turn": "Can you share an example of winning a tennis client from a casual, social interaction?",
+      "applicant_turn": "I asked a few questions to confirm the pain and trigger, then followed up the next day with a short note tailored to their role and a specific calendar next step. I tracked it like any other lead and ran a light sequence until we got a meeting and aligned on a clear use case.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_2": {
+      "interviewer_turn": "A homeowner asks you about property management options—how do you present choices in a way that helps them decide?",
+      "applicant_turn": "I'd start with discovery: current setup, pain points, desired outcomes, constraints, and how they make decisions. Then I'd frame 2–3 options against their priorities, explain the tradeoffs clearly, and restate success criteria in their words so the next step stays aligned and qualified.",
+      "belief_update": {
+        "dimension": "discovery",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_3": {
+      "interviewer_turn": "In your current role, describe the last time you ran a new-customer presentation—what did you include and how did you drive it to next steps?",
+      "applicant_turn": "I tailored the deck to their decision criteria—outcomes, risks, constraints—then match proof to those (case study, ROI logic, security artifacts). I compared alternatives explicitly and closed with a mutual evaluation plan: pilot scope, success metrics, timeline, and owners.",
+      "belief_update": {
+        "dimension": "positioning",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_4": {
+      "interviewer_turn": "Inside a prospect's company, who do you engage with during a sale—and why those roles?",
+      "applicant_turn": "I multi-thread early across the economic buyer, technical owner, and users, and I bring in procurement or security as the deal requires. I map incentives and concerns by role and arm a champion with role-specific materials so consensus builds before late-stage approvals.",
+      "belief_update": {
+        "dimension": "navigation",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_5": {
+      "interviewer_turn": "Objections come up all the time—what's your approach when a prospect pushes back?",
+      "applicant_turn": "I first isolate the real source—fit, risk, priority, budget, or authority—then align on what evidence would resolve it. If it's security, we define the review path; if it's ROI, we agree on assumptions and a quick validation. I only trade concessions for verified progress like stakeholder access or dated next steps.",
+      "belief_update": {
+        "dimension": "objections",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_6": {
+      "interviewer_turn": "Tell me about a time something unexpected derailed a deal near the finish line—what did you do?",
+      "applicant_turn": "A late legal review raised a data-retention concern, so we revised the mutual plan with explicit security and legal milestones plus clear exit criteria. I looped in our security lead, provided the necessary artifacts, and set dates and owners so the path to signature stayed predictable and trackable.",
+      "belief_update": {
+        "dimension": "deal_control",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_7": {
+      "interviewer_turn": "How frequently do you maintain and update your pipeline—and what exactly do you update?",
+      "applicant_turn": "Continuously—after any meaningful interaction I update the stage, next step with a date, verified buyer commitments, stakeholders, and top risks with mitigations. Close dates come from milestone progress in the mutual plan, not optimism, so the forecast stays evidence-based.",
+      "belief_update": {
+        "dimension": "forecasting",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_8": {
+      "interviewer_turn": "In a customer success role, what's the highest-impact thing you can do day to day?",
+      "applicant_turn": "I focused on segments with the strongest expansion and retention potential and used a clear disqualification rule for low-fit accounts. Day-to-day, I prioritized actions that move outcomes—adoption in the right teams, executive alignment on value metrics, and early risk detection—so effort stayed concentrated where revenue impact was highest.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "high",
+        "direction": "up"
+      }
+    },
+    "sales_9": {
+      "interviewer_turn": "If you're the CEO, outreach can't be optional—how do you run outbound in a disciplined way?",
+      "applicant_turn": "I treat outreach like experiments: persona plus trigger plus value claim, measured by reply rate and meeting conversion. I run a tight multi-touch sequence across channels, personalize in ways that support a buying rationale, and review results weekly to iterate on what works.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "high",
+        "direction": "up"
+      }
+    }
+  }
+}

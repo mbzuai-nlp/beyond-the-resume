@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Jordan, I see a strong operations and Salesforce background here. When you joined Summit Industrial Systems, what was the biggest operational pain point you noticed first, and how did you decide where to start?"
+    },
+    {
+        "role": "applicant",
+        "message": "The biggest issue was workflow fatigue inside Salesforce. Reps were spending too much time entering redundant data and still leadership didn't trust the reports. I started by interviewing users across regions, mapping the actual lead-to-cash process, and comparing that to how Salesforce was configured. That gap analysis made it clear which automations and field reductions would have the highest impact, which led to cutting data entry in half and restoring confidence in reporting."
+    },
+    {
+        "role": "interviewer",
+        "message": "You mentioned restoring confidence in reporting. What specifically was broken in the reporting and forecasting process, and how did you fix it in a measurable way?"
+    },
+    {
+        "role": "applicant",
+        "message": "Forecasts were based on inconsistent opportunity stages and reps interpreted stages differently. I standardized stage definitions with sales leadership, rebuilt the pipeline structure, and created required criteria for stage movement. Then I layered in PowerBI and SQL-backed validation to cross-check ERP and CRM data. Within nine months, pipeline accuracy improved by 60% and the executive team started using the reports directly for QBRs instead of asking for manual exports."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've worked with a lot of integrations like Oracle, HubSpot, SQL Server, Workato. How do you approach deciding whether to build a custom integration, use middleware, or simplify the process instead?"
+    },
+    {
+        "role": "applicant",
+        "message": "I look at three things: data ownership, frequency of sync, and long-term maintenance cost. If systems share ownership of critical data and need near real-time sync, middleware like Workato is ideal. If it's one-directional or infrequent, I'll lean toward simpler scheduled jobs or even process changes. At Summit, for example, we used middleware where lifecycle data needed to stay aligned between ERP and Salesforce, but simplified other handoffs by adjusting internal processes rather than adding technical complexity."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've also led teams across regions. What did you put in place to make sure your RevOps specialists in different time zones could provide consistent support and not create fragmented processes?"
+    },
+    {
+        "role": "applicant",
+        "message": "I created a shared operating playbook that documented every core process, from deal desk reviews to data governance rules. We also used a centralized ticketing queue with clear SLAs so requests were visible globally. Weekly syncs focused on edge cases and pattern recognition rather than status updates. That structure allowed the team to operate autonomously but still maintain a unified approach to how we supported the business."
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hi Aarav, it's great to meet you. I had a look through your resume and there's a lot happening there for someone still in undergrad. I'm curious—how would you describe your core strength in one or two lines, beyond the list of tools and projects?"
+    },
+    {
+        "role": "applicant",
+        "message": "Nice to meet you as well. If I had to compress it, I'd say I'm unusually good at taking ambitious AI ideas and actually getting them to work end-to-end. A lot of people can train a model or write a script, but I focus on stitching systems together so they're usable, measurable, and actually impactful."
+    },
+    {
+        "role": "interviewer",
+        "message": "That's a confident claim. Can you walk me through one experience where you feel you truly delivered that kind of end-to-end impact rather than just a technical proof of concept?"
+    },
+    {
+        "role": "applicant",
+        "message": "Sure. During my LLM internship at Critical AI, I built a multimodal narrative system using Llama 3.2 that combined RAG, speech-to-text, text-to-speech, image search, and even OSM mappings. It wasn't just about hooking APIs together—the base console they had was pretty limited. After my integration, the functionality improved by more than 50%. People could actually use it to generate contextual, location-aware narratives from audio and images. That's where I think I stand out—making GenAI systems practical, not just flashy."
+    },
+    {
+        "role": "interviewer",
+        "message": "Interesting. With so many different technologies involved, how do you decide what to build yourself versus what to rely on from existing libraries or frameworks?"
+    },
+    {
+        "role": "applicant",
+        "message": "I'm quite pragmatic about it. If a library can do something reliably, I'll use it. But if I feel it's a black box that limits performance or understanding, I reimplement parts of it. For example, I built core GPT-2 components and KV-cache logic myself before fine-tuning LLaMA with LoRA. That way, I'm not just using models—I actually understand how they behave under the hood."
+    }
+]

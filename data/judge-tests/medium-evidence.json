@@ -1,0 +1,276 @@
+{
+  "name": "medium-evidence",
+  "description": "Adding medium evidence to a specific dimension should move probability mass towards the medium level.",
+  "tests": {
+    "gd_0": {
+      "interviewer_turn": "Say you've finished a set of design assets—how do you typically organize the files and pass them over to the folks shipping/deploying them?",
+      "applicant_turn": "I keep each project self-contained in a single folder: the working/source file plus a dedicated exports subfolder. Once we're done, I'll share either a drive link or a zip that includes the source file and the exported PNG/JPG/PDFs in the agreed sizes. If the file relies on linked images, I bundle those as well so whoever opens it isn't chasing missing assets.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_1": {
+      "interviewer_turn": "As a freelancer, what were your end-to-end steps—from that first client conversation all the way through final delivery?",
+      "applicant_turn": "Right after the initial call, I capture the essentials: what they want, who it's for, what deliverables they need, and the key formats/sizes or platforms. If anything is vague, I ask follow-up questions. Then I gather references they like, produce a first draft, and send it for feedback. From there, I iterate based on comments and then hand over the final files.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_2": {
+      "interviewer_turn": "What feedback do you hear most often on your work?",
+      "applicant_turn": "A recurring one is that the main message or logo can get a bit lost when the layout is busy. When that happens, I'll strengthen the primary element—usually via size, spacing, or contrast—and reduce noise around it by simplifying nearby elements so it reads more quickly.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_3": {
+      "interviewer_turn": "If you needed one concept to work for print, social, and a website, how would you build each version while accounting for the different constraints?",
+      "applicant_turn": "I'd design a core layout first, then create format-specific variants. I'll set up the print, social, and web sizes and adapt the layout to each canvas while keeping the same overall look and key elements. From there it's adjustments—margins, cropping, and text sizing—so each version feels right for its placement.",
+      "belief_update": {
+        "dimension": "composition",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_4": {
+      "interviewer_turn": "How do you stay on-brand for a client, and what do you ask them to provide so you can do that reliably?",
+      "applicant_turn": "I request their logo files and brand colors up front, and I review their website and existing content to match the style they're already using. If they have brand guidelines, I follow them closely. If they don't, I maintain consistency by sticking to the same fonts and visual approach across the assets.",
+      "belief_update": {
+        "dimension": "brand_alignment",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_5": {
+      "interviewer_turn": "When you're in a design file, what's your preferred way to set up and name layers?",
+      "applicant_turn": "I organize layers into clear groups—background, images, text, logos—and I label the main groups so it's easy to navigate. I also keep important items like the logo and headings isolated on their own layers so they're fast to tweak.",
+      "belief_update": {
+        "dimension": "production_readiness",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_6": {
+      "interviewer_turn": "How do you handle customer feedback once it comes in?",
+      "applicant_turn": "I'll take the feedback and turn it into a short list of changes so we're aligned on what I'm updating. Then I implement the edits and send an updated version for review. If there are lots of requests, I usually prioritize the most important ones first and then address the remaining items in the next revision.",
+      "belief_update": {
+        "dimension": "iteration_process",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_7": {
+      "interviewer_turn": "From your time as a marketing manager, can you share a concrete example of how you ran a project start to finish?",
+      "applicant_turn": "One example: the product team planned a new launch and needed a hero image plus two Instagram posts. I confirmed the core message and where each asset would live, then gathered the copy and any product imagery. I put together initial designs, collected feedback from the team, iterated on revisions, and finally delivered exports in the required sizes for launch.",
+      "belief_update": {
+        "dimension": "brief_interpretation",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_8": {
+      "interviewer_turn": "What do you do to make sure a layout has an obvious focal point and that the viewer reads it in the right order?",
+      "applicant_turn": "I decide what needs to land first—usually the headline or main visual—and make that the strongest element. Then I place supporting information in a logical sequence and use spacing and contrast to separate sections. As a quick sanity check, I zoom out to see where my eye goes first and adjust until the reading path is clear.",
+      "belief_update": {
+        "dimension": "visual_hierarchy",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "gd_9": {
+      "interviewer_turn": "When you're picking typography for a graphic, how do you decide on typefaces and styles?",
+      "applicant_turn": "I start with the brand font when it exists, or choose something close that matches their style. Then I define a small set of consistent styles—like a heading and body treatment—and reuse them across the design. I'll tweak size and spacing based on the destination, for example larger type for social and tighter settings for smaller placements.",
+      "belief_update": {
+        "dimension": "typography",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_0": {
+      "interviewer_turn": "Tell me about that RAG project—how did you frame and scope the problem before you started building?",
+      "applicant_turn": "We began by clarifying what users actually wanted: mainly answering internal questions from documents without manually searching. I framed it as a retrieve-then-answer workflow—fetch a handful of relevant chunks, then have the model answer grounded in that context. For success criteria, we focused on whether answers matched the source docs and whether the response could point back to where the information came from. I assembled a small set of representative questions and compared a simple baseline against a couple of iterations as we improved retrieval and prompting.",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_1": {
+      "interviewer_turn": "On the forest-fire detection work: once you pulled the drone images off the device, what preprocessing did you do before training?",
+      "applicant_turn": "First I organized the data in a structure keyed by flight so we could track provenance. Then I removed obvious junk—corrupted frames and lots of near-duplicates from high-frequency capture. After that, I standardized the images so training would be consistent.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_2": {
+      "interviewer_turn": "Pick one ML project from an internship and walk me through how you evaluated it—what metrics mattered?",
+      "applicant_turn": "On a cancer classifier, accuracy alone wasn't enough. We tracked precision and recall and used the confusion matrix because different errors had different costs. We also reported ROC-AUC as a broader measure of separability. To avoid overstating progress, we compared against a simple baseline. I also checked performance across a couple of subgroups—like source site—just to see if there were clear gaps.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_3": {
+      "interviewer_turn": "When you fine-tuned YOLO, how did you go about picking hyperparameters—and deciding which run was “best”?",
+      "applicant_turn": "I started with a known-good default configuration and then changed a small number of variables per run—primarily learning rate and augmentations, and sometimes batch size if training got unstable. I documented each change along with validation outcomes. mAP was the main metric, and I also reviewed predictions on a small set of sample images because it surfaced failure patterns quickly. After several runs, I chose the setup that was consistently better across both the metrics and those qualitative checks.",
+      "belief_update": {
+        "dimension": "failure_analysis_and_iteration",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_4": {
+      "interviewer_turn": "How did that sentiment model make it into production—what did deployment actually look like?",
+      "applicant_turn": "We aligned with the software team on the request/response contract—what inputs the service would send and what outputs the model should return. I packaged the model so it could be called from the existing service and ensured it ran in the same environment as the rest of the stack. We added basic logging for volume, errors, and latency, and tracked which model artifact/version was active. After rollout, we mainly monitored stability and performance to ensure it didn't introduce slowdowns or issues.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_5": {
+      "interviewer_turn": "You walk out of a stakeholder meeting—what's the very next message you send, and what does it include?",
+      "applicant_turn": "I send a brief recap email summarizing the goal we aligned on and the approach at a high level. I call out key requirements—like what data is available, where outputs will be used, and any timeline constraints. Then I outline next steps and the main metric or checklist we'll use to judge improvement. I also list open questions and ask the appropriate owners to clarify them.",
+      "belief_update": {
+        "dimension": "communication",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_6": {
+      "interviewer_turn": "For your Llama fine-tune, what did you track to tell whether it was actually getting better?",
+      "applicant_turn": "I built a small evaluation set reflecting the prompt types we cared about and tracked how often the output was acceptable. I also sampled responses for quick qualitative checks—staying on topic and following the expected format. Training loss was mostly a sanity signal. And we ran a handful of “problem prompts,” like requests it shouldn't answer, to see how behavior changed after updates.",
+      "belief_update": {
+        "dimension": "problem_framing",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_7": {
+      "interviewer_turn": "How did you deal with missing values in validation/test—specifically, how did you impute without leaking information?",
+      "applicant_turn": "I handled it through the same preprocessing pipeline used for training so everything stayed consistent. For categorical features, I fit the encoding on the training data and then used an “unknown” option for unseen categories in validation/test. For numeric missing values, I used a simple imputer fit on train and applied it to the other splits. I saved the preprocessing steps alongside the model so reruns and later usage behaved the same way.",
+      "belief_update": {
+        "dimension": "data_judgement",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_8": {
+      "interviewer_turn": "Have you worked on a time-series prediction problem? If yes, how did you measure performance and sanity-check results?",
+      "applicant_turn": "Yes—on a time-series project, I used a standard train/validation/test split and reported MAE and MSE. I compared against simple baselines like last-value prediction or a moving average so we had a reference. I also reviewed performance across a couple of different time periods to make sure it wasn't failing in an obvious way, but the primary focus was the overall metrics.",
+      "belief_update": {
+        "dimension": "evaluation_design",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "ml_9": {
+      "interviewer_turn": "On your forex predictor, did you ever modify the real-time system—what changes did you actually make and how did you validate them?",
+      "applicant_turn": "Yes—we made a few updates to the real-time system. When we had a new model, we deployed it into the service and monitored operational metrics like latency and error rate to ensure it wasn't causing issues. We also spot-checked sample outputs after the change. Inputs and predictions were logged for later review, and we tracked which model version was currently running.",
+      "belief_update": {
+        "dimension": "ml_system_delivery",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_0": {
+      "interviewer_turn": "When you're building a target list, how do you decide which accounts are actually worth pursuing?",
+      "applicant_turn": "I start from our ICP and then prioritize accounts that show matching signals—industry, company size, trigger events, and a plausible use case. If there's clearly no fit or no path to a buyer, I disqualify early. It's not perfect, but it prevents me from spending time on completely random prospects.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_1": {
+      "interviewer_turn": "Do you have a real example of winning a tennis client in a casual social setting—how did you turn that into business?",
+      "applicant_turn": "Yes—typically I'll start with a couple of questions about what they're trying to achieve, then I follow up with a short message that connects what I can do to their specific situation. If they don't reply, I send a second touch a few days later with something relevant—like an idea or an example. It's basic, but it's more reliable than just waiting.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_2": {
+      "interviewer_turn": "A homeowner asks you what property management options exist—how would you walk them through choices without overwhelming them?",
+      "applicant_turn": "I'd begin with discovery—property type, pain points, definition of success, and constraints—then translate that into 2–3 options that fit. I'd confirm what they care about most (price, responsiveness, tenant quality) and summarize clear next steps. I don't always quantify impact precisely, but I do aim to leave with solid requirements.",
+      "belief_update": {
+        "dimension": "discovery",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_3": {
+      "interviewer_turn": "In your current role, if you were pitching to land a new customer, how would you run the presentation?",
+      "applicant_turn": "I'd tailor the deck to their role and use case, then organize it around their goals, current challenges, and how we'd address them. I include a relevant example or proof point and reserve time for questions tied to their process. It usually works well, though sometimes I could tie it more explicitly to their written decision criteria.",
+      "belief_update": {
+        "dimension": "positioning",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_4": {
+      "interviewer_turn": "Inside a customer org, who are you trying to engage with during a sales cycle?",
+      "applicant_turn": "I start with my primary contact, then work to identify who else matters—an economic buyer, a technical/user stakeholder, and sometimes procurement. As we move toward evaluation, I ask for introductions so the right people are involved before the end. I'm not always perfect at mapping it on day one, but I try to pull the key roles in early enough to avoid late surprises.",
+      "belief_update": {
+        "dimension": "navigation",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_5": {
+      "interviewer_turn": "Objections come up all the time—what's your playbook when a prospect pushes back?",
+      "applicant_turn": "When a prospect pushes back, I usually ask a few questions to understand whether it's a budget, timing, or implementation concern. Then I respond with the most relevant information I have—like a customer example, a rollout approach, or a simple ROI explanation—and suggest a follow-up step to keep the conversation moving.",
+      "belief_update": {
+        "dimension": "objections",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_6": {
+      "interviewer_turn": "Tell me about a time something unexpected derailed or delayed a close—what happened and what did you change afterward?",
+      "applicant_turn": "Yes—procurement joined late on a deal once and it slowed everything down. Since then I've been more deliberate about defining next steps with owners and dates, and I try to surface procurement/security earlier when it's relevant.",
+      "belief_update": {
+        "dimension": "deal_control",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_7": {
+      "interviewer_turn": "How regularly do you keep your pipeline up to date, and what do you actually update?",
+      "applicant_turn": "At minimum, weekly. I update stage, close date, next step, and key risks after customer conversations. If there's a material change, I update immediately.",
+      "belief_update": {
+        "dimension": "forecasting",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_8": {
+      "interviewer_turn": "When you were in customer success, what was the highest-leverage thing you could do day to day?",
+      "applicant_turn": "I concentrated on accounts that matched our best-fit profile and had the most renewal or expansion upside instead of treating every lead the same. I qualified requests quickly and prioritized based on impact and urgency.",
+      "belief_update": {
+        "dimension": "market_focus",
+        "level": "medium",
+        "direction": "up"
+      }
+    },
+    "sales_9": {
+      "interviewer_turn": "If you're the CEO and outreach is a must, how do you keep it running consistently rather than ad hoc?",
+      "applicant_turn": "I time-block outreach and follow a simple sequence: an initial note with a clear reason to reach out, then a couple of follow-ups across email and LinkedIn. I track who I contacted and the outcomes so I can iterate on messaging.",
+      "belief_update": {
+        "dimension": "outreach",
+        "level": "medium",
+        "direction": "up"
+      }
+    }
+  }
+}

@@ -32,4 +32,16 @@ uv run python -m chainlit run app/app_methods.py
 
 ## Reproducing our results (WIP)
 
-This repository uses [DVC](https://dvc.org/) to define data pipelines. These pipelines can be run to reproduce our results...
+This repository uses [DVC](https://dvc.org/) to define data pipelines. 
+
+To run judge calibration tests:
+
+```
+uv run dvc exp run run-judge-tests
+```
+
+To run simulations:
+
+```
+uv run dvc exp run run-interview-simulation
+```

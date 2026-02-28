@@ -1,0 +1,18 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hey Marge, nice to meet you. I want to zero in on your shift toward Revenue Operations—what specifically pulled you in that direction from a pretty successful sales path?"
+    },
+    {
+        "role": "applicant",
+        "message": "Nice to meet you too. Honestly, I kept finding myself drawn to the systems behind the results—clean data, smarter processes, and how small changes in tooling or workflows could unlock way more impact than just grinding harder on deals."
+    },
+    {
+        "role": "interviewer",
+        "message": "That makes sense. Can you walk me through one concrete example where you improved a revenue process rather than just closing more business?"
+    },
+    {
+        "role": "applicant",
+        "message": "Sure. At QuantaCloud I redesigned our outbound cadences using Salesforce and 6sense data, which rolled out to about 30 reps and lifted pipeline generation by 16 percent in a single quarter without adding headcount."
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Samuel, let's move fast. Give me a clear overview of your design background and what you actually do day to day. No fluff."
+    },
+    {
+        "role": "applicant",
+        "message": "Sure. I'm a multidisciplinary graphic designer working across branding, social media, and print. Day to day, I plan visual strategies, design assets for both digital and physical formats, and make sure everything aligns with brand guidelines. I tend to work end to end, from briefing through final delivery."
+    },
+    {
+        "role": "interviewer",
+        "message": "You list both agency work and freelancing. Explain the difference in how you operate in each setting, and be specific."
+    },
+    {
+        "role": "applicant",
+        "message": "At Northbridge Creative Studio, I work within structured brand systems and collaborate closely with marketing and strategy teams, so my focus is consistency and scalability. As a freelancer, I'm more autonomous, handling client communication, defining scope, and translating less-defined ideas into clear visual systems while still keeping things strategic."
+    },
+    {
+        "role": "interviewer",
+        "message": "You've taken multiple courses outside your degree. Tell me why that matters and how it shows up in your work."
+    },
+    {
+        "role": "applicant",
+        "message": "Those courses helped me stay practical and current. UX/UI sharpened my thinking around user flow and clarity, while tools like Figma and After Effects expanded how I prototype and animate ideas. It shows up in cleaner layouts, better hierarchy, and designs that consider how people actually interact with them."
+    },
+    {
+        "role": "interviewer",
+        "message": "Last thing for now. Your background includes teaching English. Convince me that's an asset in a design role."
+    },
+    {
+        "role": "applicant",
+        "message": "Teaching trained me to communicate clearly, adapt my message to different audiences, and stay organized under pressure. In design, that translates to better client conversations, clearer presentations, and visuals that explain ideas instead of just looking good."
+    }
+]

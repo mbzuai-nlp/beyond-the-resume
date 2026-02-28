@@ -1,0 +1,18 @@
+[
+    {
+        "role": "interviewer",
+        "message": "Hi Alex, thanks for coming in. I see you did a lot of research work during your PhD. Can you tell me, in simple words, what kind of work you were doing day to day?"
+    },
+    {
+        "role": "applicant",
+        "message": "Yes, I work with data and numbers. I try make computer learn from data. I run many code, test many time, and try make things faster and more correct."
+    },
+    {
+        "role": "interviewer",
+        "message": "When you say you made things faster, what exactly were you improving, and how did you know it was working better than before?"
+    },
+    {
+        "role": "applicant",
+        "message": "Before it take very long time to run, like hours. I change how code run and use many computer together. After that, it run much quicker. I check time and also check result still same or better."
+    }
+]
