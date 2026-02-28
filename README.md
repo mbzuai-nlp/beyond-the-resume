@@ -4,6 +4,11 @@
 
 This repository contains the code and dataset released for our paper on using Large Language Models as a low-cost proxy for subject matter experts (SMEs) during the early stage of hiring.
 
+## Demo
+
+[Demo](https://btr.hstu.net)
+[Video](https://vimeo.com/1169118079?share=copy&fl=sv&fe=ci)
+
 ## Dataset
 
 We release a dataset of resumes, belief calibration tests, and simulated interviews, all of which can be found under `data/`.
