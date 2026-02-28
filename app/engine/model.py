@@ -6,8 +6,8 @@ from typing import Tuple, Mapping
 
 load_dotenv()
 
-OPENAI_AI_KEY = os.getenv("OPENAI_AI_KEY")
-CLIENT = AsyncOpenAI(api_key=OPENAI_AI_KEY)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+CLIENT = AsyncOpenAI(api_key=OPENAI_API_KEY)
 
 MODEL_NAME = "gpt-5-2025-08-07"
 
