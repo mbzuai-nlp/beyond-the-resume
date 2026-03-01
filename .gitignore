@@ -8,5 +8,7 @@ __pycache__/
 .hf/
 .triton/
 .cache/
-.chainlit/
 .hypothesis/
+
+.chainlit/
+!.chainlit/config.toml
