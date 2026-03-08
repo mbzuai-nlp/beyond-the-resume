@@ -8,7 +8,7 @@ Hi there! Thanks for checking out this proof-of-concept demo of our automatic in
 
 ##  Scenario
 
-We invite you to play the role of an applicant applying to the fictitious company, **Big Data Group (BDG).** BDG is hiring for a Machine Learning Engineer (MLE) and have deployed our system to get a better understanding of each applicant. They are looking for a capable MLE using the rubric below.
+We invite you to play the role of an applicant applying to the fictitious company, **Big Data Group (BDG).** BDG is hiring for a Machine Learning Engineer (MLE) and has deployed our system to get a better understanding of each applicant. They are looking for a capable MLE using the rubric below.
 
 ## Rubric
 
