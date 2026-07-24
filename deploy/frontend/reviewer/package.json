@@ -1,0 +1,16 @@
+{
+  "name": "reviewer-console",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "preact": "10.29.7"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.10.6",
+    "vite": "8.1.5"
+  }
+}

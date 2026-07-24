@@ -1,0 +1,91 @@
+name: beyond-the-resume
+
+services:
+  proxy:
+    image: nginx:1.29-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      applicant:
+        condition: service_healthy
+      reviewer:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/interview/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  database:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - /srv/beyond-the-resume/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\""]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DB_HOST: database
+      DB_NAME: ${POSTGRES_DB}
+      DB_USER: ${POSTGRES_USER}
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      INTERVIEW_MAX_TURNS: ${INTERVIEW_MAX_TURNS}
+    depends_on:
+      database:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  applicant:
+    build:
+      context: ./frontend
+      target: applicant
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  reviewer:
+    build:
+      context: ./frontend
+      target: reviewer
+    restart: unless-stopped
+    environment:
+      REVIEWER_USERNAME: ${REVIEWER_USERNAME}
+      REVIEWER_PASSWORD: ${REVIEWER_PASSWORD}
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
