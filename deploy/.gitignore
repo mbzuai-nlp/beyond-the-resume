@@ -1,0 +1,5 @@
+.env
+frontend/applicant/dist/
+frontend/applicant/node_modules/
+frontend/reviewer/dist/
+frontend/reviewer/node_modules/
