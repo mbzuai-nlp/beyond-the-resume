@@ -14,6 +14,8 @@ function Progress({ step }) {
 }
 
 function ConsentStep({
+  privacyConsent,
+  setPrivacyConsent,
   consent,
   setConsent,
   reviewConsent,
@@ -26,10 +28,25 @@ function ConsentStep({
       <div class="setup-copy">
         <p class="eyebrow">ML Engineer Interview</p>
         <h1>Welcome to your interview.</h1>
-        <p class="lead">Review the consent terms below before continuing.</p>
+        <p class="lead">This interview will consist of 10 questions guided by an AI. The interview context is for a generic Machine Learning Engineering position that values technical, engineering, and soft skills.</p>
       </div>
       <form class="setup-form" onSubmit={onContinue}>
         <div class="consent-list">
+          <label class="consent-field">
+            <input
+              type="checkbox"
+              checked={privacyConsent}
+              onChange={(event) =>
+                setPrivacyConsent(event.currentTarget.checked)
+              }
+              required
+            />
+            <span>
+              I agree not to provide any private information to this system and
+              will only upload a resume that contains information I would happily
+              share in a public forum.
+            </span>
+          </label>
           <label class="consent-field">
             <input
               type="checkbox"
@@ -41,7 +58,8 @@ function ConsentStep({
               I consent to aggregate metrics derived from my interaction and
               provided data being published in a research publication. My
               résumé, interview transcript, logs, other granular data, and
-              personally identifiable information will not be published.
+              personally identifiable information will NOT be published or 
+              shared.
             </span>
           </label>
           <label class="consent-field">
@@ -277,6 +295,7 @@ function App() {
   const [email] = useState(
     () => `${crypto.randomUUID()}@interview.invalid`,
   );
+  const [privacyConsent, setPrivacyConsent] = useState(false);
   const [consent, setConsent] = useState(false);
   const [reviewConsent, setReviewConsent] = useState(false);
   const [resume, setResume] = useState();
@@ -322,6 +341,8 @@ function App() {
 
       {step === 1 && (
         <ConsentStep
+          privacyConsent={privacyConsent}
+          setPrivacyConsent={setPrivacyConsent}
           consent={consent}
           setConsent={setConsent}
           reviewConsent={reviewConsent}
