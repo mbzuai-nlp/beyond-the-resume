@@ -1,6 +1,6 @@
 # Beyond the Resume: A Rubric-Aware Automatic Interview System for Information Elicitation
 
-<img width="2875" height="1793" alt="Screenshot 2026-02-24 154230" src="https://github.com/user-attachments/assets/08d764a8-2431-4245-8622-b773a4ddd9c9" />
+<img width="2875" height="1793" alt="Screenshot 2026-02-24 154230" src="hero.png" />
 
 ## Abstract
 
@@ -10,13 +10,23 @@
 
 [Demo](https://btr.hstu.net)
 
-[Video](https://vimeo.com/1169118079?share=copy&fl=sv&fe=ci)
-
 ## Dataset
 
 We release a dataset of resumes, belief calibration tests, and simulated interviews, all of which can be found under `data/`.
 
-## Running the system
+## Deploying the system
+
+This system is spun up using Docker Compose, allowing deployment on any environment (whether it be a cloud VM, local workstation, or managed Docker service.) The following instructions assume you are spinning up the system on a virtual machine.
+
+1. Clone this repository to your machine of choice.
+2. `cd deploy` and create a `.env` file modelled off of `.env.example`
+3. Run `docker-compose up -d`
+
+Done! Now the system is live and running. Docker Compose also allows for vast interoperabolity. You can mount your own filesystem volumes to persist Postgres Data, update the Nginx service according to any firewall rules etc.
+
+## Reproducing our results
+
+This repository uses [DVC](https://dvc.org/) to define data pipelines. 
 
 Firstly, ensure you have the Python manager, [uv](https://github.com/astral-sh/uv), installed in your system.
 
@@ -31,16 +41,6 @@ Next, add a `.env` file to the project root with the following secret:
 ```
 OPENAI_API_KEY=...
 ```
-
-Finally, run the below command to spin up the system on `localhost:8000`:
-
-```
-uv run python -m chainlit run app/app_methods.py
-```
-
-## Reproducing our results
-
-This repository uses [DVC](https://dvc.org/) to define data pipelines. 
 
 To run judge calibration tests:
 
